@@ -1,0 +1,753 @@
+2025-10-13 09:35:00,608 - tricys.utils.log_utils - INFO - Logging to file: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\log\simulation_20251013_093500.log
+2025-10-13 09:35:00,609 - tricys.simulation_analysis - INFO - Loading configuration from: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\example_config_ai.json
+2025-10-13 09:35:00,609 - tricys.core.jobs - INFO - Generating simulation jobs.{}
+2025-10-13 09:35:00,609 - tricys.simulation_analysis - INFO - Detected analysis_cases field, starting to create independent working directories for each analysis case...
+2025-10-13 09:35:00,612 - tricys.simulation_analysis - INFO - Detected 4 analysis cases, creating independent working directories in current directory...
+2025-10-13 09:35:00,612 - tricys.simulation_analysis - INFO - Current working directory: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis
+2025-10-13 09:35:00,613 - tricys.simulation_analysis - INFO - ✓ Working directory for case 1 created:
+2025-10-13 09:35:00,613 - tricys.simulation_analysis - INFO -   - Case name: FB_Analysis
+2025-10-13 09:35:00,613 - tricys.simulation_analysis - INFO -   - Independent variable: plasma1.fb
+2025-10-13 09:35:00,613 - tricys.simulation_analysis - INFO -   - Sampling method: linspace:0.04:0.16:7
+2025-10-13 09:35:00,613 - tricys.simulation_analysis - INFO -   - Working directory: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\FB_Analysis
+2025-10-13 09:35:00,613 - tricys.simulation_analysis - INFO -   - Configuration file: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\FB_Analysis\config.json
+2025-10-13 09:35:00,614 - tricys.simulation_analysis - INFO - ✓ Working directory for case 2 created:
+2025-10-13 09:35:00,614 - tricys.simulation_analysis - INFO -   - Case name: DIR_Analysis
+2025-10-13 09:35:00,614 - tricys.simulation_analysis - INFO -   - Independent variable: tep_fep.to_SDS_Fraction[1]
+2025-10-13 09:35:00,615 - tricys.simulation_analysis - INFO -   - Sampling method: linspace:0:0.9:10
+2025-10-13 09:35:00,615 - tricys.simulation_analysis - INFO -   - Working directory: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\DIR_Analysis
+2025-10-13 09:35:00,615 - tricys.simulation_analysis - INFO -   - Configuration file: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\DIR_Analysis\config.json
+2025-10-13 09:35:00,616 - tricys.simulation_analysis - INFO - ✓ Working directory for case 3 created:
+2025-10-13 09:35:00,616 - tricys.simulation_analysis - INFO -   - Case name: TBR_Analysis
+2025-10-13 09:35:00,616 - tricys.simulation_analysis - INFO -   - Independent variable: blanket.TBR
+2025-10-13 09:35:00,616 - tricys.simulation_analysis - INFO -   - Sampling method: [1.05, 1.08, 1.1, 1.12, 1.15, 1.18, 1.2, 1.22, 1.25]
+2025-10-13 09:35:00,616 - tricys.simulation_analysis - INFO -   - Working directory: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\TBR_Analysis
+2025-10-13 09:35:00,616 - tricys.simulation_analysis - INFO -   - Configuration file: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\TBR_Analysis\config.json
+2025-10-13 09:35:00,617 - tricys.simulation_analysis - INFO - ✓ Working directory for case 4 created:
+2025-10-13 09:35:00,617 - tricys.simulation_analysis - INFO -   - Case name: I_ISS_T_Analysis
+2025-10-13 09:35:00,617 - tricys.simulation_analysis - INFO -   - Independent variable: i_iss.T
+2025-10-13 09:35:00,617 - tricys.simulation_analysis - INFO -   - Sampling method: linspace:2:12:6
+2025-10-13 09:35:00,617 - tricys.simulation_analysis - INFO -   - Working directory: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\I_ISS_T_Analysis
+2025-10-13 09:35:00,617 - tricys.simulation_analysis - INFO -   - Configuration file: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\I_ISS_T_Analysis\config.json
+2025-10-13 09:35:00,618 - tricys.simulation_analysis - INFO - Successfully created independent working directories for 4 analysis cases
+2025-10-13 09:35:00,618 - tricys.simulation_analysis - INFO - Starting execution of 4 analysis cases...
+2025-10-13 09:35:00,618 - tricys.simulation_analysis - INFO - 
+=== Starting execution of analysis case 1/4 ===
+2025-10-13 09:35:00,618 - tricys.simulation_analysis - INFO - Case name: FB_Analysis
+2025-10-13 09:35:00,618 - tricys.simulation_analysis - INFO - Independent variable: plasma1.fb
+2025-10-13 09:35:00,618 - tricys.simulation_analysis - INFO - Working directory: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\FB_Analysis
+2025-10-13 09:35:00,618 - tricys.core.jobs - INFO - Generating simulation jobs.{'plasma1.fb': 'linspace:0.04:0.16:7'}
+2025-10-13 09:35:00,618 - tricys.simulation_analysis - INFO - Starting simulation in SEQUENTIAL mode.
+2025-10-13 09:35:00,619 - tricys.simulation_analysis - INFO - Running sweep sequentially. Intermediate files will be in: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\FB_Analysis\temp
+2025-10-13 09:35:00,777 - tricys.core.modelica - INFO - Loading package: D:/Administrator/Documents/Github/tricys/test_example/example_model/package.mo
+2025-10-13 09:35:08,506 - tricys.simulation_analysis - INFO - Running sequential job 1/7 with parameters: {'plasma1.fb': 0.04}
+2025-10-13 09:35:08,879 - tricys.simulation_analysis - INFO - Sequential job 1 finished. Results at D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\FB_Analysis\temp\job_1\job_1_simulation_results.csv
+2025-10-13 09:35:08,880 - tricys.simulation_analysis - INFO - Starting bisection search for 'blanket.TBR' in range [0.5, 2.0]
+2025-10-13 09:35:09,032 - tricys.core.modelica - INFO - Loading package: D:/Administrator/Documents/Github/tricys/test_example/example_model/package.mo
+2025-10-13 09:35:16,908 - tricys.simulation_analysis - INFO - --- [job_1] Iteration 1/10: Testing blanket.TBR = 1.2500 ---
+2025-10-13 09:35:17,250 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.04, 'blanket.TBR': 1.25} successful. Metric 'Self_Sufficiency_Time': 87.0
+2025-10-13 09:35:17,251 - tricys.simulation_analysis - INFO - --- [job_1] Iteration 2/10: Testing blanket.TBR = 0.8750 ---
+2025-10-13 09:35:17,372 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.04, 'blanket.TBR': 0.875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:35:17,373 - tricys.simulation_analysis - INFO - --- [job_1] Iteration 3/10: Testing blanket.TBR = 1.0625 ---
+2025-10-13 09:35:17,500 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.04, 'blanket.TBR': 1.0625} successful. Metric 'Self_Sufficiency_Time': 139.0
+2025-10-13 09:35:17,500 - tricys.simulation_analysis - INFO - --- [job_1] Iteration 4/10: Testing blanket.TBR = 0.9688 ---
+2025-10-13 09:35:17,630 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.04, 'blanket.TBR': 0.96875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:35:17,630 - tricys.simulation_analysis - INFO - --- [job_1] Iteration 5/10: Testing blanket.TBR = 1.0156 ---
+2025-10-13 09:35:17,778 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.04, 'blanket.TBR': 1.015625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:35:17,779 - tricys.simulation_analysis - INFO - --- [job_1] Iteration 6/10: Testing blanket.TBR = 1.0391 ---
+2025-10-13 09:35:17,918 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.04, 'blanket.TBR': 1.0390625} successful. Metric 'Self_Sufficiency_Time': 630.0
+2025-10-13 09:35:17,919 - tricys.simulation_analysis - INFO - --- [job_1] Iteration 7/10: Testing blanket.TBR = 1.0273 ---
+2025-10-13 09:35:18,042 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.04, 'blanket.TBR': 1.02734375} successful. Metric 'Self_Sufficiency_Time': 2487.0
+2025-10-13 09:35:18,042 - tricys.simulation_analysis - INFO - --- [job_1] Iteration 8/10: Testing blanket.TBR = 1.0215 ---
+2025-10-13 09:35:18,180 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.04, 'blanket.TBR': 1.021484375} successful. Metric 'Self_Sufficiency_Time': 6226.0
+2025-10-13 09:35:18,181 - tricys.simulation_analysis - INFO - --- [job_1] Iteration 9/10: Testing blanket.TBR = 1.0186 ---
+2025-10-13 09:35:18,299 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.04, 'blanket.TBR': 1.0185546875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:35:18,300 - tricys.simulation_analysis - INFO - Search converged for job_1. Tolerance 0.005 reached.
+2025-10-13 09:35:18,300 - tricys.simulation_analysis - INFO - Bisection search for job_1 finished. Optimal value: 1.0215
+2025-10-13 09:35:18,339 - tricys.simulation_analysis - INFO - Running sequential job 2/7 with parameters: {'plasma1.fb': 0.06}
+2025-10-13 09:35:18,462 - tricys.simulation_analysis - INFO - Sequential job 2 finished. Results at D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\FB_Analysis\temp\job_2\job_2_simulation_results.csv
+2025-10-13 09:35:18,462 - tricys.simulation_analysis - INFO - Starting bisection search for 'blanket.TBR' in range [0.5, 2.0]
+2025-10-13 09:35:18,608 - tricys.core.modelica - INFO - Loading package: D:/Administrator/Documents/Github/tricys/test_example/example_model/package.mo
+2025-10-13 09:35:26,485 - tricys.simulation_analysis - INFO - --- [job_2] Iteration 1/10: Testing blanket.TBR = 1.2500 ---
+2025-10-13 09:35:27,266 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.06, 'blanket.TBR': 1.25} successful. Metric 'Self_Sufficiency_Time': 86.0
+2025-10-13 09:35:27,266 - tricys.simulation_analysis - INFO - --- [job_2] Iteration 2/10: Testing blanket.TBR = 0.8750 ---
+2025-10-13 09:35:27,392 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.06, 'blanket.TBR': 0.875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:35:27,392 - tricys.simulation_analysis - INFO - --- [job_2] Iteration 3/10: Testing blanket.TBR = 1.0625 ---
+2025-10-13 09:35:27,536 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.06, 'blanket.TBR': 1.0625} successful. Metric 'Self_Sufficiency_Time': 130.0
+2025-10-13 09:35:27,536 - tricys.simulation_analysis - INFO - --- [job_2] Iteration 4/10: Testing blanket.TBR = 0.9688 ---
+2025-10-13 09:35:27,662 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.06, 'blanket.TBR': 0.96875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:35:27,662 - tricys.simulation_analysis - INFO - --- [job_2] Iteration 5/10: Testing blanket.TBR = 1.0156 ---
+2025-10-13 09:35:27,789 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.06, 'blanket.TBR': 1.015625} successful. Metric 'Self_Sufficiency_Time': 5655.0
+2025-10-13 09:35:27,789 - tricys.simulation_analysis - INFO - --- [job_2] Iteration 6/10: Testing blanket.TBR = 0.9922 ---
+2025-10-13 09:35:27,914 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.06, 'blanket.TBR': 0.9921875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:35:27,915 - tricys.simulation_analysis - INFO - --- [job_2] Iteration 7/10: Testing blanket.TBR = 1.0039 ---
+2025-10-13 09:35:28,028 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.06, 'blanket.TBR': 1.00390625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:35:28,028 - tricys.simulation_analysis - INFO - --- [job_2] Iteration 8/10: Testing blanket.TBR = 1.0098 ---
+2025-10-13 09:35:28,148 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.06, 'blanket.TBR': 1.009765625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:35:28,148 - tricys.simulation_analysis - INFO - --- [job_2] Iteration 9/10: Testing blanket.TBR = 1.0127 ---
+2025-10-13 09:35:28,279 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.06, 'blanket.TBR': 1.0126953125} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:35:28,279 - tricys.simulation_analysis - INFO - Search converged for job_2. Tolerance 0.005 reached.
+2025-10-13 09:35:28,279 - tricys.simulation_analysis - INFO - Bisection search for job_2 finished. Optimal value: 1.0156
+2025-10-13 09:35:28,316 - tricys.simulation_analysis - INFO - Running sequential job 3/7 with parameters: {'plasma1.fb': 0.08}
+2025-10-13 09:35:28,433 - tricys.simulation_analysis - INFO - Sequential job 3 finished. Results at D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\FB_Analysis\temp\job_3\job_3_simulation_results.csv
+2025-10-13 09:35:28,434 - tricys.simulation_analysis - INFO - Starting bisection search for 'blanket.TBR' in range [0.5, 2.0]
+2025-10-13 09:35:28,571 - tricys.core.modelica - INFO - Loading package: D:/Administrator/Documents/Github/tricys/test_example/example_model/package.mo
+2025-10-13 09:35:36,308 - tricys.simulation_analysis - INFO - --- [job_3] Iteration 1/10: Testing blanket.TBR = 1.2500 ---
+2025-10-13 09:35:36,646 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.08, 'blanket.TBR': 1.25} successful. Metric 'Self_Sufficiency_Time': 85.0
+2025-10-13 09:35:36,646 - tricys.simulation_analysis - INFO - --- [job_3] Iteration 2/10: Testing blanket.TBR = 0.8750 ---
+2025-10-13 09:35:36,778 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.08, 'blanket.TBR': 0.875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:35:36,778 - tricys.simulation_analysis - INFO - --- [job_3] Iteration 3/10: Testing blanket.TBR = 1.0625 ---
+2025-10-13 09:35:36,912 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.08, 'blanket.TBR': 1.0625} successful. Metric 'Self_Sufficiency_Time': 127.0
+2025-10-13 09:35:36,912 - tricys.simulation_analysis - INFO - --- [job_3] Iteration 4/10: Testing blanket.TBR = 0.9688 ---
+2025-10-13 09:35:37,041 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.08, 'blanket.TBR': 0.96875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:35:37,041 - tricys.simulation_analysis - INFO - --- [job_3] Iteration 5/10: Testing blanket.TBR = 1.0156 ---
+2025-10-13 09:35:37,173 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.08, 'blanket.TBR': 1.015625} successful. Metric 'Self_Sufficiency_Time': 2938.0
+2025-10-13 09:35:37,173 - tricys.simulation_analysis - INFO - --- [job_3] Iteration 6/10: Testing blanket.TBR = 0.9922 ---
+2025-10-13 09:35:37,320 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.08, 'blanket.TBR': 0.9921875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:35:37,320 - tricys.simulation_analysis - INFO - --- [job_3] Iteration 7/10: Testing blanket.TBR = 1.0039 ---
+2025-10-13 09:35:37,433 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.08, 'blanket.TBR': 1.00390625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:35:37,433 - tricys.simulation_analysis - INFO - --- [job_3] Iteration 8/10: Testing blanket.TBR = 1.0098 ---
+2025-10-13 09:35:37,542 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.08, 'blanket.TBR': 1.009765625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:35:37,542 - tricys.simulation_analysis - INFO - --- [job_3] Iteration 9/10: Testing blanket.TBR = 1.0127 ---
+2025-10-13 09:35:37,652 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.08, 'blanket.TBR': 1.0126953125} successful. Metric 'Self_Sufficiency_Time': 5340.0
+2025-10-13 09:35:37,652 - tricys.simulation_analysis - INFO - Search converged for job_3. Tolerance 0.005 reached.
+2025-10-13 09:35:37,653 - tricys.simulation_analysis - INFO - Bisection search for job_3 finished. Optimal value: 1.0127
+2025-10-13 09:35:37,687 - tricys.simulation_analysis - INFO - Running sequential job 4/7 with parameters: {'plasma1.fb': 0.1}
+2025-10-13 09:35:37,806 - tricys.simulation_analysis - INFO - Sequential job 4 finished. Results at D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\FB_Analysis\temp\job_4\job_4_simulation_results.csv
+2025-10-13 09:35:37,807 - tricys.simulation_analysis - INFO - Starting bisection search for 'blanket.TBR' in range [0.5, 2.0]
+2025-10-13 09:35:38,029 - tricys.core.modelica - INFO - Loading package: D:/Administrator/Documents/Github/tricys/test_example/example_model/package.mo
+2025-10-13 09:35:46,301 - tricys.simulation_analysis - INFO - --- [job_4] Iteration 1/10: Testing blanket.TBR = 1.2500 ---
+2025-10-13 09:35:46,641 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.1, 'blanket.TBR': 1.25} successful. Metric 'Self_Sufficiency_Time': 85.0
+2025-10-13 09:35:46,641 - tricys.simulation_analysis - INFO - --- [job_4] Iteration 2/10: Testing blanket.TBR = 0.8750 ---
+2025-10-13 09:35:46,776 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.1, 'blanket.TBR': 0.875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:35:46,776 - tricys.simulation_analysis - INFO - --- [job_4] Iteration 3/10: Testing blanket.TBR = 1.0625 ---
+2025-10-13 09:35:46,912 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.1, 'blanket.TBR': 1.0625} successful. Metric 'Self_Sufficiency_Time': 125.0
+2025-10-13 09:35:46,912 - tricys.simulation_analysis - INFO - --- [job_4] Iteration 4/10: Testing blanket.TBR = 0.9688 ---
+2025-10-13 09:35:47,037 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.1, 'blanket.TBR': 0.96875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:35:47,037 - tricys.simulation_analysis - INFO - --- [job_4] Iteration 5/10: Testing blanket.TBR = 1.0156 ---
+2025-10-13 09:35:47,168 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.1, 'blanket.TBR': 1.015625} successful. Metric 'Self_Sufficiency_Time': 1996.0
+2025-10-13 09:35:47,168 - tricys.simulation_analysis - INFO - --- [job_4] Iteration 6/10: Testing blanket.TBR = 0.9922 ---
+2025-10-13 09:35:47,295 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.1, 'blanket.TBR': 0.9921875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:35:47,295 - tricys.simulation_analysis - INFO - --- [job_4] Iteration 7/10: Testing blanket.TBR = 1.0039 ---
+2025-10-13 09:35:47,415 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.1, 'blanket.TBR': 1.00390625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:35:47,415 - tricys.simulation_analysis - INFO - --- [job_4] Iteration 8/10: Testing blanket.TBR = 1.0098 ---
+2025-10-13 09:35:47,533 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.1, 'blanket.TBR': 1.009765625} successful. Metric 'Self_Sufficiency_Time': 7850.0
+2025-10-13 09:35:47,533 - tricys.simulation_analysis - INFO - --- [job_4] Iteration 9/10: Testing blanket.TBR = 1.0068 ---
+2025-10-13 09:35:47,655 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.1, 'blanket.TBR': 1.0068359375} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:35:47,655 - tricys.simulation_analysis - INFO - Search converged for job_4. Tolerance 0.005 reached.
+2025-10-13 09:35:47,655 - tricys.simulation_analysis - INFO - Bisection search for job_4 finished. Optimal value: 1.0098
+2025-10-13 09:35:47,697 - tricys.simulation_analysis - INFO - Running sequential job 5/7 with parameters: {'plasma1.fb': 0.12}
+2025-10-13 09:35:47,824 - tricys.simulation_analysis - INFO - Sequential job 5 finished. Results at D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\FB_Analysis\temp\job_5\job_5_simulation_results.csv
+2025-10-13 09:35:47,824 - tricys.simulation_analysis - INFO - Starting bisection search for 'blanket.TBR' in range [0.5, 2.0]
+2025-10-13 09:35:47,962 - tricys.core.modelica - INFO - Loading package: D:/Administrator/Documents/Github/tricys/test_example/example_model/package.mo
+2025-10-13 09:35:56,079 - tricys.simulation_analysis - INFO - --- [job_5] Iteration 1/10: Testing blanket.TBR = 1.2500 ---
+2025-10-13 09:35:56,393 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.12, 'blanket.TBR': 1.25} successful. Metric 'Self_Sufficiency_Time': 85.0
+2025-10-13 09:35:56,394 - tricys.simulation_analysis - INFO - --- [job_5] Iteration 2/10: Testing blanket.TBR = 0.8750 ---
+2025-10-13 09:35:56,513 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.12, 'blanket.TBR': 0.875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:35:56,513 - tricys.simulation_analysis - INFO - --- [job_5] Iteration 3/10: Testing blanket.TBR = 1.0625 ---
+2025-10-13 09:35:56,640 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.12, 'blanket.TBR': 1.0625} successful. Metric 'Self_Sufficiency_Time': 124.0
+2025-10-13 09:35:56,640 - tricys.simulation_analysis - INFO - --- [job_5] Iteration 4/10: Testing blanket.TBR = 0.9688 ---
+2025-10-13 09:35:56,769 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.12, 'blanket.TBR': 0.96875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:35:56,769 - tricys.simulation_analysis - INFO - --- [job_5] Iteration 5/10: Testing blanket.TBR = 1.0156 ---
+2025-10-13 09:35:56,895 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.12, 'blanket.TBR': 1.015625} successful. Metric 'Self_Sufficiency_Time': 1478.0
+2025-10-13 09:35:56,896 - tricys.simulation_analysis - INFO - --- [job_5] Iteration 6/10: Testing blanket.TBR = 0.9922 ---
+2025-10-13 09:35:57,023 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.12, 'blanket.TBR': 0.9921875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:35:57,023 - tricys.simulation_analysis - INFO - --- [job_5] Iteration 7/10: Testing blanket.TBR = 1.0039 ---
+2025-10-13 09:35:57,138 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.12, 'blanket.TBR': 1.00390625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:35:57,139 - tricys.simulation_analysis - INFO - --- [job_5] Iteration 8/10: Testing blanket.TBR = 1.0098 ---
+2025-10-13 09:35:57,296 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.12, 'blanket.TBR': 1.009765625} successful. Metric 'Self_Sufficiency_Time': 4997.0
+2025-10-13 09:35:57,296 - tricys.simulation_analysis - INFO - --- [job_5] Iteration 9/10: Testing blanket.TBR = 1.0068 ---
+2025-10-13 09:35:57,418 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.12, 'blanket.TBR': 1.0068359375} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:35:57,418 - tricys.simulation_analysis - INFO - Search converged for job_5. Tolerance 0.005 reached.
+2025-10-13 09:35:57,419 - tricys.simulation_analysis - INFO - Bisection search for job_5 finished. Optimal value: 1.0098
+2025-10-13 09:35:57,479 - tricys.simulation_analysis - INFO - Running sequential job 6/7 with parameters: {'plasma1.fb': 0.14}
+2025-10-13 09:35:57,602 - tricys.simulation_analysis - INFO - Sequential job 6 finished. Results at D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\FB_Analysis\temp\job_6\job_6_simulation_results.csv
+2025-10-13 09:35:57,603 - tricys.simulation_analysis - INFO - Starting bisection search for 'blanket.TBR' in range [0.5, 2.0]
+2025-10-13 09:35:57,742 - tricys.core.modelica - INFO - Loading package: D:/Administrator/Documents/Github/tricys/test_example/example_model/package.mo
+2025-10-13 09:36:05,398 - tricys.simulation_analysis - INFO - --- [job_6] Iteration 1/10: Testing blanket.TBR = 1.2500 ---
+2025-10-13 09:36:05,751 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.14, 'blanket.TBR': 1.25} successful. Metric 'Self_Sufficiency_Time': 85.0
+2025-10-13 09:36:05,751 - tricys.simulation_analysis - INFO - --- [job_6] Iteration 2/10: Testing blanket.TBR = 0.8750 ---
+2025-10-13 09:36:05,963 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.14, 'blanket.TBR': 0.875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:36:05,963 - tricys.simulation_analysis - INFO - --- [job_6] Iteration 3/10: Testing blanket.TBR = 1.0625 ---
+2025-10-13 09:36:06,078 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.14, 'blanket.TBR': 1.0625} successful. Metric 'Self_Sufficiency_Time': 123.0
+2025-10-13 09:36:06,078 - tricys.simulation_analysis - INFO - --- [job_6] Iteration 4/10: Testing blanket.TBR = 0.9688 ---
+2025-10-13 09:36:06,219 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.14, 'blanket.TBR': 0.96875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:36:06,219 - tricys.simulation_analysis - INFO - --- [job_6] Iteration 5/10: Testing blanket.TBR = 1.0156 ---
+2025-10-13 09:36:06,338 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.14, 'blanket.TBR': 1.015625} successful. Metric 'Self_Sufficiency_Time': 1145.0
+2025-10-13 09:36:06,338 - tricys.simulation_analysis - INFO - --- [job_6] Iteration 6/10: Testing blanket.TBR = 0.9922 ---
+2025-10-13 09:36:06,460 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.14, 'blanket.TBR': 0.9921875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:36:06,461 - tricys.simulation_analysis - INFO - --- [job_6] Iteration 7/10: Testing blanket.TBR = 1.0039 ---
+2025-10-13 09:36:06,576 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.14, 'blanket.TBR': 1.00390625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:36:06,577 - tricys.simulation_analysis - INFO - --- [job_6] Iteration 8/10: Testing blanket.TBR = 1.0098 ---
+2025-10-13 09:36:06,696 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.14, 'blanket.TBR': 1.009765625} successful. Metric 'Self_Sufficiency_Time': 3961.0
+2025-10-13 09:36:06,697 - tricys.simulation_analysis - INFO - --- [job_6] Iteration 9/10: Testing blanket.TBR = 1.0068 ---
+2025-10-13 09:36:06,810 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.14, 'blanket.TBR': 1.0068359375} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:36:06,810 - tricys.simulation_analysis - INFO - Search converged for job_6. Tolerance 0.005 reached.
+2025-10-13 09:36:06,811 - tricys.simulation_analysis - INFO - Bisection search for job_6 finished. Optimal value: 1.0098
+2025-10-13 09:36:06,846 - tricys.simulation_analysis - INFO - Running sequential job 7/7 with parameters: {'plasma1.fb': 0.16}
+2025-10-13 09:36:06,955 - tricys.simulation_analysis - INFO - Sequential job 7 finished. Results at D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\FB_Analysis\temp\job_7\job_7_simulation_results.csv
+2025-10-13 09:36:06,955 - tricys.simulation_analysis - INFO - Starting bisection search for 'blanket.TBR' in range [0.5, 2.0]
+2025-10-13 09:36:07,091 - tricys.core.modelica - INFO - Loading package: D:/Administrator/Documents/Github/tricys/test_example/example_model/package.mo
+2025-10-13 09:36:14,710 - tricys.simulation_analysis - INFO - --- [job_7] Iteration 1/10: Testing blanket.TBR = 1.2500 ---
+2025-10-13 09:36:15,063 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.16, 'blanket.TBR': 1.25} successful. Metric 'Self_Sufficiency_Time': 84.0
+2025-10-13 09:36:15,063 - tricys.simulation_analysis - INFO - --- [job_7] Iteration 2/10: Testing blanket.TBR = 0.8750 ---
+2025-10-13 09:36:15,182 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.16, 'blanket.TBR': 0.875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:36:15,182 - tricys.simulation_analysis - INFO - --- [job_7] Iteration 3/10: Testing blanket.TBR = 1.0625 ---
+2025-10-13 09:36:15,303 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.16, 'blanket.TBR': 1.0625} successful. Metric 'Self_Sufficiency_Time': 122.0
+2025-10-13 09:36:15,303 - tricys.simulation_analysis - INFO - --- [job_7] Iteration 4/10: Testing blanket.TBR = 0.9688 ---
+2025-10-13 09:36:15,422 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.16, 'blanket.TBR': 0.96875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:36:15,422 - tricys.simulation_analysis - INFO - --- [job_7] Iteration 5/10: Testing blanket.TBR = 1.0156 ---
+2025-10-13 09:36:15,547 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.16, 'blanket.TBR': 1.015625} successful. Metric 'Self_Sufficiency_Time': 909.0
+2025-10-13 09:36:15,547 - tricys.simulation_analysis - INFO - --- [job_7] Iteration 6/10: Testing blanket.TBR = 0.9922 ---
+2025-10-13 09:36:15,681 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.16, 'blanket.TBR': 0.9921875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:36:15,681 - tricys.simulation_analysis - INFO - --- [job_7] Iteration 7/10: Testing blanket.TBR = 1.0039 ---
+2025-10-13 09:36:15,793 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.16, 'blanket.TBR': 1.00390625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:36:15,794 - tricys.simulation_analysis - INFO - --- [job_7] Iteration 8/10: Testing blanket.TBR = 1.0098 ---
+2025-10-13 09:36:15,911 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.16, 'blanket.TBR': 1.009765625} successful. Metric 'Self_Sufficiency_Time': 3369.0
+2025-10-13 09:36:15,911 - tricys.simulation_analysis - INFO - --- [job_7] Iteration 9/10: Testing blanket.TBR = 1.0068 ---
+2025-10-13 09:36:16,033 - tricys.simulation_analysis - INFO - Analysis for params {'plasma1.fb': 0.16, 'blanket.TBR': 1.0068359375} successful. Metric 'Self_Sufficiency_Time': 9010.0
+2025-10-13 09:36:16,033 - tricys.simulation_analysis - INFO - Search converged for job_7. Tolerance 0.005 reached.
+2025-10-13 09:36:16,033 - tricys.simulation_analysis - INFO - Bisection search for job_7 finished. Optimal value: 1.0068
+2025-10-13 09:36:16,072 - tricys.simulation_analysis - INFO - Sweep optimization summary saved to: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\FB_Analysis\results\requierd_tbr_summary.csv
+2025-10-13 09:36:16,108 - tricys.simulation_analysis - INFO - Processing 7 job(s). Combining results.
+2025-10-13 09:36:16,196 - tricys.simulation_analysis - INFO - Combined results saved to: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\FB_Analysis\results\sweep_results.csv
+2025-10-13 09:36:16,599 - tricys.simulation_analysis - INFO - Sweep time series plot generated: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\FB_Analysis\results\sweep_sds_I1_vs_plasma1_fb.png
+2025-10-13 09:36:16,600 - tricys.simulation_analysis - INFO - Starting automated sensitivity analysis.
+2025-10-13 09:36:16,610 - tricys.simulation_analysis - INFO - Loading sweep results from: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\FB_Analysis\results\sweep_results.csv
+2025-10-13 09:36:16,619 - tricys.simulation_analysis - INFO - Merged optimization and sensitivity analysis summaries.
+2025-10-13 09:36:16,621 - tricys.simulation_analysis - INFO - Sensitivity analysis summary saved to: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\FB_Analysis\results\sensitivity_analysis_summary.csv
+2025-10-13 09:36:16,647 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-13 09:36:16,650 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-13 09:36:16,691 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-13 09:36:16,693 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-13 09:36:16,729 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-13 09:36:16,731 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-13 09:36:16,768 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-13 09:36:16,771 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-13 09:36:17,401 - tricys.simulation_analysis - INFO - No post-processing task configured, skipping this step.
+2025-10-13 09:36:17,401 - tricys.simulation_analysis - INFO - ✓ Analysis case 1 executed successfully
+2025-10-13 09:36:17,401 - tricys.simulation_analysis - INFO - 
+=== Starting execution of analysis case 2/4 ===
+2025-10-13 09:36:17,402 - tricys.simulation_analysis - INFO - Case name: DIR_Analysis
+2025-10-13 09:36:17,402 - tricys.simulation_analysis - INFO - Independent variable: tep_fep.to_SDS_Fraction[1]
+2025-10-13 09:36:17,402 - tricys.simulation_analysis - INFO - Working directory: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\DIR_Analysis
+2025-10-13 09:36:17,402 - tricys.core.jobs - INFO - Generating simulation jobs.{'tep_fep.to_SDS_Fraction[1]': 'linspace:0:0.9:10'}
+2025-10-13 09:36:17,402 - tricys.simulation_analysis - INFO - Starting simulation in SEQUENTIAL mode.
+2025-10-13 09:36:17,402 - tricys.simulation_analysis - INFO - Running sweep sequentially. Intermediate files will be in: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\DIR_Analysis\temp
+2025-10-13 09:36:17,538 - tricys.core.modelica - INFO - Loading package: D:/Administrator/Documents/Github/tricys/test_example/example_model/package.mo
+2025-10-13 09:36:25,300 - tricys.simulation_analysis - INFO - Running sequential job 1/10 with parameters: {'tep_fep.to_SDS_Fraction[1]': 0.0}
+2025-10-13 09:36:26,204 - tricys.simulation_analysis - INFO - Sequential job 1 finished. Results at D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\DIR_Analysis\temp\job_1\job_1_simulation_results.csv
+2025-10-13 09:36:26,205 - tricys.simulation_analysis - INFO - Starting bisection search for 'blanket.TBR' in range [0.5, 2.0]
+2025-10-13 09:36:26,355 - tricys.core.modelica - INFO - Loading package: D:/Administrator/Documents/Github/tricys/test_example/example_model/package.mo
+2025-10-13 09:36:34,066 - tricys.simulation_analysis - INFO - --- [job_1] Iteration 1/10: Testing blanket.TBR = 1.2500 ---
+2025-10-13 09:36:34,436 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.0, 'blanket.TBR': 1.25} successful. Metric 'Self_Sufficiency_Time': 86.0
+2025-10-13 09:36:34,436 - tricys.simulation_analysis - INFO - --- [job_1] Iteration 2/10: Testing blanket.TBR = 0.8750 ---
+2025-10-13 09:36:34,562 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.0, 'blanket.TBR': 0.875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:36:34,562 - tricys.simulation_analysis - INFO - --- [job_1] Iteration 3/10: Testing blanket.TBR = 1.0625 ---
+2025-10-13 09:36:34,715 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.0, 'blanket.TBR': 1.0625} successful. Metric 'Self_Sufficiency_Time': 134.0
+2025-10-13 09:36:34,716 - tricys.simulation_analysis - INFO - --- [job_1] Iteration 4/10: Testing blanket.TBR = 0.9688 ---
+2025-10-13 09:36:34,859 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.0, 'blanket.TBR': 0.96875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:36:34,859 - tricys.simulation_analysis - INFO - --- [job_1] Iteration 5/10: Testing blanket.TBR = 1.0156 ---
+2025-10-13 09:36:34,986 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.0, 'blanket.TBR': 1.015625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:36:34,986 - tricys.simulation_analysis - INFO - --- [job_1] Iteration 6/10: Testing blanket.TBR = 1.0391 ---
+2025-10-13 09:36:35,119 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.0, 'blanket.TBR': 1.0390625} successful. Metric 'Self_Sufficiency_Time': 190.0
+2025-10-13 09:36:35,120 - tricys.simulation_analysis - INFO - --- [job_1] Iteration 7/10: Testing blanket.TBR = 1.0273 ---
+2025-10-13 09:36:35,234 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.0, 'blanket.TBR': 1.02734375} successful. Metric 'Self_Sufficiency_Time': 1734.0
+2025-10-13 09:36:35,235 - tricys.simulation_analysis - INFO - --- [job_1] Iteration 8/10: Testing blanket.TBR = 1.0215 ---
+2025-10-13 09:36:35,353 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.0, 'blanket.TBR': 1.021484375} successful. Metric 'Self_Sufficiency_Time': 4519.0
+2025-10-13 09:36:35,353 - tricys.simulation_analysis - INFO - --- [job_1] Iteration 9/10: Testing blanket.TBR = 1.0186 ---
+2025-10-13 09:36:35,472 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.0, 'blanket.TBR': 1.0185546875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:36:35,472 - tricys.simulation_analysis - INFO - Search converged for job_1. Tolerance 0.005 reached.
+2025-10-13 09:36:35,472 - tricys.simulation_analysis - INFO - Bisection search for job_1 finished. Optimal value: 1.0215
+2025-10-13 09:36:35,509 - tricys.simulation_analysis - INFO - Running sequential job 2/10 with parameters: {'tep_fep.to_SDS_Fraction[1]': 0.1}
+2025-10-13 09:36:35,635 - tricys.simulation_analysis - INFO - Sequential job 2 finished. Results at D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\DIR_Analysis\temp\job_2\job_2_simulation_results.csv
+2025-10-13 09:36:35,635 - tricys.simulation_analysis - INFO - Starting bisection search for 'blanket.TBR' in range [0.5, 2.0]
+2025-10-13 09:36:35,770 - tricys.core.modelica - INFO - Loading package: D:/Administrator/Documents/Github/tricys/test_example/example_model/package.mo
+2025-10-13 09:36:43,452 - tricys.simulation_analysis - INFO - --- [job_2] Iteration 1/10: Testing blanket.TBR = 1.2500 ---
+2025-10-13 09:36:43,797 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.1, 'blanket.TBR': 1.25} successful. Metric 'Self_Sufficiency_Time': 86.0
+2025-10-13 09:36:43,797 - tricys.simulation_analysis - INFO - --- [job_2] Iteration 2/10: Testing blanket.TBR = 0.8750 ---
+2025-10-13 09:36:43,939 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.1, 'blanket.TBR': 0.875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:36:43,939 - tricys.simulation_analysis - INFO - --- [job_2] Iteration 3/10: Testing blanket.TBR = 1.0625 ---
+2025-10-13 09:36:44,097 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.1, 'blanket.TBR': 1.0625} successful. Metric 'Self_Sufficiency_Time': 134.0
+2025-10-13 09:36:44,098 - tricys.simulation_analysis - INFO - --- [job_2] Iteration 4/10: Testing blanket.TBR = 0.9688 ---
+2025-10-13 09:36:44,226 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.1, 'blanket.TBR': 0.96875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:36:44,226 - tricys.simulation_analysis - INFO - --- [job_2] Iteration 5/10: Testing blanket.TBR = 1.0156 ---
+2025-10-13 09:36:44,351 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.1, 'blanket.TBR': 1.015625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:36:44,352 - tricys.simulation_analysis - INFO - --- [job_2] Iteration 6/10: Testing blanket.TBR = 1.0391 ---
+2025-10-13 09:36:44,476 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.1, 'blanket.TBR': 1.0390625} successful. Metric 'Self_Sufficiency_Time': 183.0
+2025-10-13 09:36:44,477 - tricys.simulation_analysis - INFO - --- [job_2] Iteration 7/10: Testing blanket.TBR = 1.0273 ---
+2025-10-13 09:36:44,590 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.1, 'blanket.TBR': 1.02734375} successful. Metric 'Self_Sufficiency_Time': 1476.0
+2025-10-13 09:36:44,591 - tricys.simulation_analysis - INFO - --- [job_2] Iteration 8/10: Testing blanket.TBR = 1.0215 ---
+2025-10-13 09:36:44,705 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.1, 'blanket.TBR': 1.021484375} successful. Metric 'Self_Sufficiency_Time': 3773.0
+2025-10-13 09:36:44,705 - tricys.simulation_analysis - INFO - --- [job_2] Iteration 9/10: Testing blanket.TBR = 1.0186 ---
+2025-10-13 09:36:44,816 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.1, 'blanket.TBR': 1.0185546875} successful. Metric 'Self_Sufficiency_Time': 7706.0
+2025-10-13 09:36:44,816 - tricys.simulation_analysis - INFO - Search converged for job_2. Tolerance 0.005 reached.
+2025-10-13 09:36:44,817 - tricys.simulation_analysis - INFO - Bisection search for job_2 finished. Optimal value: 1.0186
+2025-10-13 09:36:44,850 - tricys.simulation_analysis - INFO - Running sequential job 3/10 with parameters: {'tep_fep.to_SDS_Fraction[1]': 0.2}
+2025-10-13 09:36:44,979 - tricys.simulation_analysis - INFO - Sequential job 3 finished. Results at D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\DIR_Analysis\temp\job_3\job_3_simulation_results.csv
+2025-10-13 09:36:44,979 - tricys.simulation_analysis - INFO - Starting bisection search for 'blanket.TBR' in range [0.5, 2.0]
+2025-10-13 09:36:45,117 - tricys.core.modelica - INFO - Loading package: D:/Administrator/Documents/Github/tricys/test_example/example_model/package.mo
+2025-10-13 09:36:52,945 - tricys.simulation_analysis - INFO - --- [job_3] Iteration 1/10: Testing blanket.TBR = 1.2500 ---
+2025-10-13 09:36:53,310 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.2, 'blanket.TBR': 1.25} successful. Metric 'Self_Sufficiency_Time': 86.0
+2025-10-13 09:36:53,310 - tricys.simulation_analysis - INFO - --- [job_3] Iteration 2/10: Testing blanket.TBR = 0.8750 ---
+2025-10-13 09:36:53,442 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.2, 'blanket.TBR': 0.875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:36:53,443 - tricys.simulation_analysis - INFO - --- [job_3] Iteration 3/10: Testing blanket.TBR = 1.0625 ---
+2025-10-13 09:36:53,569 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.2, 'blanket.TBR': 1.0625} successful. Metric 'Self_Sufficiency_Time': 133.0
+2025-10-13 09:36:53,569 - tricys.simulation_analysis - INFO - --- [job_3] Iteration 4/10: Testing blanket.TBR = 0.9688 ---
+2025-10-13 09:36:53,697 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.2, 'blanket.TBR': 0.96875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:36:53,698 - tricys.simulation_analysis - INFO - --- [job_3] Iteration 5/10: Testing blanket.TBR = 1.0156 ---
+2025-10-13 09:36:53,827 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.2, 'blanket.TBR': 1.015625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:36:53,827 - tricys.simulation_analysis - INFO - --- [job_3] Iteration 6/10: Testing blanket.TBR = 1.0391 ---
+2025-10-13 09:36:53,956 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.2, 'blanket.TBR': 1.0390625} successful. Metric 'Self_Sufficiency_Time': 177.0
+2025-10-13 09:36:53,956 - tricys.simulation_analysis - INFO - --- [job_3] Iteration 7/10: Testing blanket.TBR = 1.0273 ---
+2025-10-13 09:36:54,081 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.2, 'blanket.TBR': 1.02734375} successful. Metric 'Self_Sufficiency_Time': 1245.0
+2025-10-13 09:36:54,082 - tricys.simulation_analysis - INFO - --- [job_3] Iteration 8/10: Testing blanket.TBR = 1.0215 ---
+2025-10-13 09:36:54,198 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.2, 'blanket.TBR': 1.021484375} successful. Metric 'Self_Sufficiency_Time': 3204.0
+2025-10-13 09:36:54,198 - tricys.simulation_analysis - INFO - --- [job_3] Iteration 9/10: Testing blanket.TBR = 1.0186 ---
+2025-10-13 09:36:54,312 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.2, 'blanket.TBR': 1.0185546875} successful. Metric 'Self_Sufficiency_Time': 5630.0
+2025-10-13 09:36:54,312 - tricys.simulation_analysis - INFO - Search converged for job_3. Tolerance 0.005 reached.
+2025-10-13 09:36:54,313 - tricys.simulation_analysis - INFO - Bisection search for job_3 finished. Optimal value: 1.0186
+2025-10-13 09:36:54,345 - tricys.simulation_analysis - INFO - Running sequential job 4/10 with parameters: {'tep_fep.to_SDS_Fraction[1]': 0.3}
+2025-10-13 09:36:54,476 - tricys.simulation_analysis - INFO - Sequential job 4 finished. Results at D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\DIR_Analysis\temp\job_4\job_4_simulation_results.csv
+2025-10-13 09:36:54,476 - tricys.simulation_analysis - INFO - Starting bisection search for 'blanket.TBR' in range [0.5, 2.0]
+2025-10-13 09:36:54,612 - tricys.core.modelica - INFO - Loading package: D:/Administrator/Documents/Github/tricys/test_example/example_model/package.mo
+2025-10-13 09:37:02,933 - tricys.simulation_analysis - INFO - --- [job_4] Iteration 1/10: Testing blanket.TBR = 1.2500 ---
+2025-10-13 09:37:03,270 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.3, 'blanket.TBR': 1.25} successful. Metric 'Self_Sufficiency_Time': 86.0
+2025-10-13 09:37:03,270 - tricys.simulation_analysis - INFO - --- [job_4] Iteration 2/10: Testing blanket.TBR = 0.8750 ---
+2025-10-13 09:37:03,396 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.3, 'blanket.TBR': 0.875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:37:03,396 - tricys.simulation_analysis - INFO - --- [job_4] Iteration 3/10: Testing blanket.TBR = 1.0625 ---
+2025-10-13 09:37:03,521 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.3, 'blanket.TBR': 1.0625} successful. Metric 'Self_Sufficiency_Time': 132.0
+2025-10-13 09:37:03,521 - tricys.simulation_analysis - INFO - --- [job_4] Iteration 4/10: Testing blanket.TBR = 0.9688 ---
+2025-10-13 09:37:03,652 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.3, 'blanket.TBR': 0.96875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:37:03,652 - tricys.simulation_analysis - INFO - --- [job_4] Iteration 5/10: Testing blanket.TBR = 1.0156 ---
+2025-10-13 09:37:03,781 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.3, 'blanket.TBR': 1.015625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:37:03,781 - tricys.simulation_analysis - INFO - --- [job_4] Iteration 6/10: Testing blanket.TBR = 1.0391 ---
+2025-10-13 09:37:03,910 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.3, 'blanket.TBR': 1.0390625} successful. Metric 'Self_Sufficiency_Time': 172.0
+2025-10-13 09:37:03,910 - tricys.simulation_analysis - INFO - --- [job_4] Iteration 7/10: Testing blanket.TBR = 1.0273 ---
+2025-10-13 09:37:04,023 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.3, 'blanket.TBR': 1.02734375} successful. Metric 'Self_Sufficiency_Time': 1034.0
+2025-10-13 09:37:04,023 - tricys.simulation_analysis - INFO - --- [job_4] Iteration 8/10: Testing blanket.TBR = 1.0215 ---
+2025-10-13 09:37:04,147 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.3, 'blanket.TBR': 1.021484375} successful. Metric 'Self_Sufficiency_Time': 2745.0
+2025-10-13 09:37:04,147 - tricys.simulation_analysis - INFO - --- [job_4] Iteration 9/10: Testing blanket.TBR = 1.0186 ---
+2025-10-13 09:37:04,262 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.3, 'blanket.TBR': 1.0185546875} successful. Metric 'Self_Sufficiency_Time': 4533.0
+2025-10-13 09:37:04,262 - tricys.simulation_analysis - INFO - Search converged for job_4. Tolerance 0.005 reached.
+2025-10-13 09:37:04,263 - tricys.simulation_analysis - INFO - Bisection search for job_4 finished. Optimal value: 1.0186
+2025-10-13 09:37:04,299 - tricys.simulation_analysis - INFO - Running sequential job 5/10 with parameters: {'tep_fep.to_SDS_Fraction[1]': 0.4}
+2025-10-13 09:37:04,427 - tricys.simulation_analysis - INFO - Sequential job 5 finished. Results at D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\DIR_Analysis\temp\job_5\job_5_simulation_results.csv
+2025-10-13 09:37:04,427 - tricys.simulation_analysis - INFO - Starting bisection search for 'blanket.TBR' in range [0.5, 2.0]
+2025-10-13 09:37:04,564 - tricys.core.modelica - INFO - Loading package: D:/Administrator/Documents/Github/tricys/test_example/example_model/package.mo
+2025-10-13 09:37:12,730 - tricys.simulation_analysis - INFO - --- [job_5] Iteration 1/10: Testing blanket.TBR = 1.2500 ---
+2025-10-13 09:37:13,351 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.4, 'blanket.TBR': 1.25} successful. Metric 'Self_Sufficiency_Time': 86.0
+2025-10-13 09:37:13,351 - tricys.simulation_analysis - INFO - --- [job_5] Iteration 2/10: Testing blanket.TBR = 0.8750 ---
+2025-10-13 09:37:13,485 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.4, 'blanket.TBR': 0.875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:37:13,486 - tricys.simulation_analysis - INFO - --- [job_5] Iteration 3/10: Testing blanket.TBR = 1.0625 ---
+2025-10-13 09:37:13,616 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.4, 'blanket.TBR': 1.0625} successful. Metric 'Self_Sufficiency_Time': 131.0
+2025-10-13 09:37:13,616 - tricys.simulation_analysis - INFO - --- [job_5] Iteration 4/10: Testing blanket.TBR = 0.9688 ---
+2025-10-13 09:37:13,743 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.4, 'blanket.TBR': 0.96875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:37:13,744 - tricys.simulation_analysis - INFO - --- [job_5] Iteration 5/10: Testing blanket.TBR = 1.0156 ---
+2025-10-13 09:37:13,878 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.4, 'blanket.TBR': 1.015625} successful. Metric 'Self_Sufficiency_Time': 7771.0
+2025-10-13 09:37:13,878 - tricys.simulation_analysis - INFO - --- [job_5] Iteration 6/10: Testing blanket.TBR = 0.9922 ---
+2025-10-13 09:37:14,005 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.4, 'blanket.TBR': 0.9921875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:37:14,006 - tricys.simulation_analysis - INFO - --- [job_5] Iteration 7/10: Testing blanket.TBR = 1.0039 ---
+2025-10-13 09:37:14,119 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.4, 'blanket.TBR': 1.00390625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:37:14,119 - tricys.simulation_analysis - INFO - --- [job_5] Iteration 8/10: Testing blanket.TBR = 1.0098 ---
+2025-10-13 09:37:14,229 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.4, 'blanket.TBR': 1.009765625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:37:14,230 - tricys.simulation_analysis - INFO - --- [job_5] Iteration 9/10: Testing blanket.TBR = 1.0127 ---
+2025-10-13 09:37:14,347 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.4, 'blanket.TBR': 1.0126953125} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:37:14,347 - tricys.simulation_analysis - INFO - Search converged for job_5. Tolerance 0.005 reached.
+2025-10-13 09:37:14,348 - tricys.simulation_analysis - INFO - Bisection search for job_5 finished. Optimal value: 1.0156
+2025-10-13 09:37:14,384 - tricys.simulation_analysis - INFO - Running sequential job 6/10 with parameters: {'tep_fep.to_SDS_Fraction[1]': 0.5}
+2025-10-13 09:37:14,521 - tricys.simulation_analysis - INFO - Sequential job 6 finished. Results at D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\DIR_Analysis\temp\job_6\job_6_simulation_results.csv
+2025-10-13 09:37:14,522 - tricys.simulation_analysis - INFO - Starting bisection search for 'blanket.TBR' in range [0.5, 2.0]
+2025-10-13 09:37:14,657 - tricys.core.modelica - INFO - Loading package: D:/Administrator/Documents/Github/tricys/test_example/example_model/package.mo
+2025-10-13 09:37:23,089 - tricys.simulation_analysis - INFO - --- [job_6] Iteration 1/10: Testing blanket.TBR = 1.2500 ---
+2025-10-13 09:37:23,413 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.5, 'blanket.TBR': 1.25} successful. Metric 'Self_Sufficiency_Time': 86.0
+2025-10-13 09:37:23,414 - tricys.simulation_analysis - INFO - --- [job_6] Iteration 2/10: Testing blanket.TBR = 0.8750 ---
+2025-10-13 09:37:23,539 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.5, 'blanket.TBR': 0.875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:37:23,540 - tricys.simulation_analysis - INFO - --- [job_6] Iteration 3/10: Testing blanket.TBR = 1.0625 ---
+2025-10-13 09:37:23,666 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.5, 'blanket.TBR': 1.0625} successful. Metric 'Self_Sufficiency_Time': 130.0
+2025-10-13 09:37:23,666 - tricys.simulation_analysis - INFO - --- [job_6] Iteration 4/10: Testing blanket.TBR = 0.9688 ---
+2025-10-13 09:37:23,793 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.5, 'blanket.TBR': 0.96875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:37:23,793 - tricys.simulation_analysis - INFO - --- [job_6] Iteration 5/10: Testing blanket.TBR = 1.0156 ---
+2025-10-13 09:37:23,925 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.5, 'blanket.TBR': 1.015625} successful. Metric 'Self_Sufficiency_Time': 5655.0
+2025-10-13 09:37:23,926 - tricys.simulation_analysis - INFO - --- [job_6] Iteration 6/10: Testing blanket.TBR = 0.9922 ---
+2025-10-13 09:37:24,053 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.5, 'blanket.TBR': 0.9921875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:37:24,053 - tricys.simulation_analysis - INFO - --- [job_6] Iteration 7/10: Testing blanket.TBR = 1.0039 ---
+2025-10-13 09:37:24,168 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.5, 'blanket.TBR': 1.00390625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:37:24,168 - tricys.simulation_analysis - INFO - --- [job_6] Iteration 8/10: Testing blanket.TBR = 1.0098 ---
+2025-10-13 09:37:24,279 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.5, 'blanket.TBR': 1.009765625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:37:24,280 - tricys.simulation_analysis - INFO - --- [job_6] Iteration 9/10: Testing blanket.TBR = 1.0127 ---
+2025-10-13 09:37:24,394 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.5, 'blanket.TBR': 1.0126953125} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:37:24,394 - tricys.simulation_analysis - INFO - Search converged for job_6. Tolerance 0.005 reached.
+2025-10-13 09:37:24,394 - tricys.simulation_analysis - INFO - Bisection search for job_6 finished. Optimal value: 1.0156
+2025-10-13 09:37:24,428 - tricys.simulation_analysis - INFO - Running sequential job 7/10 with parameters: {'tep_fep.to_SDS_Fraction[1]': 0.6}
+2025-10-13 09:37:24,538 - tricys.simulation_analysis - INFO - Sequential job 7 finished. Results at D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\DIR_Analysis\temp\job_7\job_7_simulation_results.csv
+2025-10-13 09:37:24,539 - tricys.simulation_analysis - INFO - Starting bisection search for 'blanket.TBR' in range [0.5, 2.0]
+2025-10-13 09:37:24,695 - tricys.core.modelica - INFO - Loading package: D:/Administrator/Documents/Github/tricys/test_example/example_model/package.mo
+2025-10-13 09:37:33,392 - tricys.simulation_analysis - INFO - --- [job_7] Iteration 1/10: Testing blanket.TBR = 1.2500 ---
+2025-10-13 09:37:33,764 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.6, 'blanket.TBR': 1.25} successful. Metric 'Self_Sufficiency_Time': 86.0
+2025-10-13 09:37:33,764 - tricys.simulation_analysis - INFO - --- [job_7] Iteration 2/10: Testing blanket.TBR = 0.8750 ---
+2025-10-13 09:37:33,890 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.6, 'blanket.TBR': 0.875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:37:33,890 - tricys.simulation_analysis - INFO - --- [job_7] Iteration 3/10: Testing blanket.TBR = 1.0625 ---
+2025-10-13 09:37:34,013 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.6, 'blanket.TBR': 1.0625} successful. Metric 'Self_Sufficiency_Time': 129.0
+2025-10-13 09:37:34,013 - tricys.simulation_analysis - INFO - --- [job_7] Iteration 4/10: Testing blanket.TBR = 0.9688 ---
+2025-10-13 09:37:34,139 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.6, 'blanket.TBR': 0.96875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:37:34,139 - tricys.simulation_analysis - INFO - --- [job_7] Iteration 5/10: Testing blanket.TBR = 1.0156 ---
+2025-10-13 09:37:34,271 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.6, 'blanket.TBR': 1.015625} successful. Metric 'Self_Sufficiency_Time': 4547.0
+2025-10-13 09:37:34,271 - tricys.simulation_analysis - INFO - --- [job_7] Iteration 6/10: Testing blanket.TBR = 0.9922 ---
+2025-10-13 09:37:34,399 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.6, 'blanket.TBR': 0.9921875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:37:34,399 - tricys.simulation_analysis - INFO - --- [job_7] Iteration 7/10: Testing blanket.TBR = 1.0039 ---
+2025-10-13 09:37:34,509 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.6, 'blanket.TBR': 1.00390625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:37:34,510 - tricys.simulation_analysis - INFO - --- [job_7] Iteration 8/10: Testing blanket.TBR = 1.0098 ---
+2025-10-13 09:37:34,623 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.6, 'blanket.TBR': 1.009765625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:37:34,623 - tricys.simulation_analysis - INFO - --- [job_7] Iteration 9/10: Testing blanket.TBR = 1.0127 ---
+2025-10-13 09:37:34,738 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.6, 'blanket.TBR': 1.0126953125} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:37:34,739 - tricys.simulation_analysis - INFO - Search converged for job_7. Tolerance 0.005 reached.
+2025-10-13 09:37:34,739 - tricys.simulation_analysis - INFO - Bisection search for job_7 finished. Optimal value: 1.0156
+2025-10-13 09:37:34,775 - tricys.simulation_analysis - INFO - Running sequential job 8/10 with parameters: {'tep_fep.to_SDS_Fraction[1]': 0.7}
+2025-10-13 09:37:34,883 - tricys.simulation_analysis - INFO - Sequential job 8 finished. Results at D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\DIR_Analysis\temp\job_8\job_8_simulation_results.csv
+2025-10-13 09:37:34,883 - tricys.simulation_analysis - INFO - Starting bisection search for 'blanket.TBR' in range [0.5, 2.0]
+2025-10-13 09:37:35,030 - tricys.core.modelica - INFO - Loading package: D:/Administrator/Documents/Github/tricys/test_example/example_model/package.mo
+2025-10-13 09:37:43,913 - tricys.simulation_analysis - INFO - --- [job_8] Iteration 1/10: Testing blanket.TBR = 1.2500 ---
+2025-10-13 09:37:44,268 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.7, 'blanket.TBR': 1.25} successful. Metric 'Self_Sufficiency_Time': 85.0
+2025-10-13 09:37:44,268 - tricys.simulation_analysis - INFO - --- [job_8] Iteration 2/10: Testing blanket.TBR = 0.8750 ---
+2025-10-13 09:37:44,388 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.7, 'blanket.TBR': 0.875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:37:44,388 - tricys.simulation_analysis - INFO - --- [job_8] Iteration 3/10: Testing blanket.TBR = 1.0625 ---
+2025-10-13 09:37:44,853 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.7, 'blanket.TBR': 1.0625} successful. Metric 'Self_Sufficiency_Time': 129.0
+2025-10-13 09:37:44,853 - tricys.simulation_analysis - INFO - --- [job_8] Iteration 4/10: Testing blanket.TBR = 0.9688 ---
+2025-10-13 09:37:44,987 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.7, 'blanket.TBR': 0.96875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:37:44,987 - tricys.simulation_analysis - INFO - --- [job_8] Iteration 5/10: Testing blanket.TBR = 1.0156 ---
+2025-10-13 09:37:45,136 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.7, 'blanket.TBR': 1.015625} successful. Metric 'Self_Sufficiency_Time': 3791.0
+2025-10-13 09:37:45,137 - tricys.simulation_analysis - INFO - --- [job_8] Iteration 6/10: Testing blanket.TBR = 0.9922 ---
+2025-10-13 09:37:45,269 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.7, 'blanket.TBR': 0.9921875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:37:45,269 - tricys.simulation_analysis - INFO - --- [job_8] Iteration 7/10: Testing blanket.TBR = 1.0039 ---
+2025-10-13 09:37:45,383 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.7, 'blanket.TBR': 1.00390625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:37:45,384 - tricys.simulation_analysis - INFO - --- [job_8] Iteration 8/10: Testing blanket.TBR = 1.0098 ---
+2025-10-13 09:37:45,503 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.7, 'blanket.TBR': 1.009765625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:37:45,503 - tricys.simulation_analysis - INFO - --- [job_8] Iteration 9/10: Testing blanket.TBR = 1.0127 ---
+2025-10-13 09:37:45,622 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.7, 'blanket.TBR': 1.0126953125} successful. Metric 'Self_Sufficiency_Time': 7838.0
+2025-10-13 09:37:45,623 - tricys.simulation_analysis - INFO - Search converged for job_8. Tolerance 0.005 reached.
+2025-10-13 09:37:45,623 - tricys.simulation_analysis - INFO - Bisection search for job_8 finished. Optimal value: 1.0127
+2025-10-13 09:37:45,659 - tricys.simulation_analysis - INFO - Running sequential job 9/10 with parameters: {'tep_fep.to_SDS_Fraction[1]': 0.8}
+2025-10-13 09:37:45,772 - tricys.simulation_analysis - INFO - Sequential job 9 finished. Results at D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\DIR_Analysis\temp\job_9\job_9_simulation_results.csv
+2025-10-13 09:37:45,772 - tricys.simulation_analysis - INFO - Starting bisection search for 'blanket.TBR' in range [0.5, 2.0]
+2025-10-13 09:37:45,907 - tricys.core.modelica - INFO - Loading package: D:/Administrator/Documents/Github/tricys/test_example/example_model/package.mo
+2025-10-13 09:37:55,342 - tricys.simulation_analysis - INFO - --- [job_9] Iteration 1/10: Testing blanket.TBR = 1.2500 ---
+2025-10-13 09:37:56,240 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.8, 'blanket.TBR': 1.25} successful. Metric 'Self_Sufficiency_Time': 85.0
+2025-10-13 09:37:56,240 - tricys.simulation_analysis - INFO - --- [job_9] Iteration 2/10: Testing blanket.TBR = 0.8750 ---
+2025-10-13 09:37:56,373 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.8, 'blanket.TBR': 0.875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:37:56,373 - tricys.simulation_analysis - INFO - --- [job_9] Iteration 3/10: Testing blanket.TBR = 1.0625 ---
+2025-10-13 09:37:56,503 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.8, 'blanket.TBR': 1.0625} successful. Metric 'Self_Sufficiency_Time': 128.0
+2025-10-13 09:37:56,504 - tricys.simulation_analysis - INFO - --- [job_9] Iteration 4/10: Testing blanket.TBR = 0.9688 ---
+2025-10-13 09:37:56,637 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.8, 'blanket.TBR': 0.96875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:37:56,638 - tricys.simulation_analysis - INFO - --- [job_9] Iteration 5/10: Testing blanket.TBR = 1.0156 ---
+2025-10-13 09:37:56,767 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.8, 'blanket.TBR': 1.015625} successful. Metric 'Self_Sufficiency_Time': 3217.0
+2025-10-13 09:37:56,768 - tricys.simulation_analysis - INFO - --- [job_9] Iteration 6/10: Testing blanket.TBR = 0.9922 ---
+2025-10-13 09:37:56,897 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.8, 'blanket.TBR': 0.9921875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:37:56,897 - tricys.simulation_analysis - INFO - --- [job_9] Iteration 7/10: Testing blanket.TBR = 1.0039 ---
+2025-10-13 09:37:57,008 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.8, 'blanket.TBR': 1.00390625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:37:57,009 - tricys.simulation_analysis - INFO - --- [job_9] Iteration 8/10: Testing blanket.TBR = 1.0098 ---
+2025-10-13 09:37:57,129 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.8, 'blanket.TBR': 1.009765625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:37:57,129 - tricys.simulation_analysis - INFO - --- [job_9] Iteration 9/10: Testing blanket.TBR = 1.0127 ---
+2025-10-13 09:37:57,250 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.8, 'blanket.TBR': 1.0126953125} successful. Metric 'Self_Sufficiency_Time': 5680.0
+2025-10-13 09:37:57,250 - tricys.simulation_analysis - INFO - Search converged for job_9. Tolerance 0.005 reached.
+2025-10-13 09:37:57,250 - tricys.simulation_analysis - INFO - Bisection search for job_9 finished. Optimal value: 1.0127
+2025-10-13 09:37:57,289 - tricys.simulation_analysis - INFO - Running sequential job 10/10 with parameters: {'tep_fep.to_SDS_Fraction[1]': 0.9}
+2025-10-13 09:37:57,401 - tricys.simulation_analysis - INFO - Sequential job 10 finished. Results at D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\DIR_Analysis\temp\job_10\job_10_simulation_results.csv
+2025-10-13 09:37:57,401 - tricys.simulation_analysis - INFO - Starting bisection search for 'blanket.TBR' in range [0.5, 2.0]
+2025-10-13 09:37:57,537 - tricys.core.modelica - INFO - Loading package: D:/Administrator/Documents/Github/tricys/test_example/example_model/package.mo
+2025-10-13 09:38:06,839 - tricys.simulation_analysis - INFO - --- [job_10] Iteration 1/10: Testing blanket.TBR = 1.2500 ---
+2025-10-13 09:38:07,196 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.9, 'blanket.TBR': 1.25} successful. Metric 'Self_Sufficiency_Time': 85.0
+2025-10-13 09:38:07,196 - tricys.simulation_analysis - INFO - --- [job_10] Iteration 2/10: Testing blanket.TBR = 0.8750 ---
+2025-10-13 09:38:07,327 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.9, 'blanket.TBR': 0.875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:38:07,327 - tricys.simulation_analysis - INFO - --- [job_10] Iteration 3/10: Testing blanket.TBR = 1.0625 ---
+2025-10-13 09:38:07,446 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.9, 'blanket.TBR': 1.0625} successful. Metric 'Self_Sufficiency_Time': 127.0
+2025-10-13 09:38:07,446 - tricys.simulation_analysis - INFO - --- [job_10] Iteration 4/10: Testing blanket.TBR = 0.9688 ---
+2025-10-13 09:38:07,566 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.9, 'blanket.TBR': 0.96875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:38:07,567 - tricys.simulation_analysis - INFO - --- [job_10] Iteration 5/10: Testing blanket.TBR = 1.0156 ---
+2025-10-13 09:38:07,690 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.9, 'blanket.TBR': 1.015625} successful. Metric 'Self_Sufficiency_Time': 2754.0
+2025-10-13 09:38:07,691 - tricys.simulation_analysis - INFO - --- [job_10] Iteration 6/10: Testing blanket.TBR = 0.9922 ---
+2025-10-13 09:38:07,819 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.9, 'blanket.TBR': 0.9921875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:38:07,819 - tricys.simulation_analysis - INFO - --- [job_10] Iteration 7/10: Testing blanket.TBR = 1.0039 ---
+2025-10-13 09:38:07,936 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.9, 'blanket.TBR': 1.00390625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:38:07,936 - tricys.simulation_analysis - INFO - --- [job_10] Iteration 8/10: Testing blanket.TBR = 1.0098 ---
+2025-10-13 09:38:08,047 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.9, 'blanket.TBR': 1.009765625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:38:08,048 - tricys.simulation_analysis - INFO - --- [job_10] Iteration 9/10: Testing blanket.TBR = 1.0127 ---
+2025-10-13 09:38:08,175 - tricys.simulation_analysis - INFO - Analysis for params {'tep_fep.to_SDS_Fraction[1]': 0.9, 'blanket.TBR': 1.0126953125} successful. Metric 'Self_Sufficiency_Time': 4561.0
+2025-10-13 09:38:08,175 - tricys.simulation_analysis - INFO - Search converged for job_10. Tolerance 0.005 reached.
+2025-10-13 09:38:08,175 - tricys.simulation_analysis - INFO - Bisection search for job_10 finished. Optimal value: 1.0127
+2025-10-13 09:38:08,210 - tricys.simulation_analysis - INFO - Sweep optimization summary saved to: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\DIR_Analysis\results\requierd_tbr_summary.csv
+2025-10-13 09:38:08,246 - tricys.simulation_analysis - INFO - Processing 10 job(s). Combining results.
+2025-10-13 09:38:08,355 - tricys.simulation_analysis - INFO - Combined results saved to: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\DIR_Analysis\results\sweep_results.csv
+2025-10-13 09:38:08,696 - tricys.simulation_analysis - INFO - Sweep time series plot generated: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\DIR_Analysis\results\sweep_sds_I1_vs_tep_fep_to_SDS_Fraction1.png
+2025-10-13 09:38:08,696 - tricys.simulation_analysis - INFO - Starting automated sensitivity analysis.
+2025-10-13 09:38:08,708 - tricys.simulation_analysis - INFO - Loading sweep results from: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\DIR_Analysis\results\sweep_results.csv
+2025-10-13 09:38:08,714 - tricys.simulation_analysis - INFO - Merged optimization and sensitivity analysis summaries.
+2025-10-13 09:38:08,715 - tricys.simulation_analysis - INFO - Sensitivity analysis summary saved to: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\DIR_Analysis\results\sensitivity_analysis_summary.csv
+2025-10-13 09:38:08,740 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-13 09:38:08,743 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-13 09:38:08,791 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-13 09:38:08,794 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-13 09:38:08,838 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-13 09:38:08,840 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-13 09:38:08,887 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-13 09:38:08,890 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-13 09:38:09,656 - tricys.simulation_analysis - INFO - No post-processing task configured, skipping this step.
+2025-10-13 09:38:09,657 - tricys.simulation_analysis - INFO - ✓ Analysis case 2 executed successfully
+2025-10-13 09:38:09,657 - tricys.simulation_analysis - INFO - 
+=== Starting execution of analysis case 3/4 ===
+2025-10-13 09:38:09,657 - tricys.simulation_analysis - INFO - Case name: TBR_Analysis
+2025-10-13 09:38:09,657 - tricys.simulation_analysis - INFO - Independent variable: blanket.TBR
+2025-10-13 09:38:09,657 - tricys.simulation_analysis - INFO - Working directory: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\TBR_Analysis
+2025-10-13 09:38:09,657 - tricys.core.jobs - INFO - Generating simulation jobs.{'blanket.TBR': [1.05, 1.08, 1.1, 1.12, 1.15, 1.18, 1.2, 1.22, 1.25]}
+2025-10-13 09:38:09,657 - tricys.simulation_analysis - INFO - Starting simulation in SEQUENTIAL mode.
+2025-10-13 09:38:09,658 - tricys.simulation_analysis - INFO - Running sweep sequentially. Intermediate files will be in: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\TBR_Analysis\temp
+2025-10-13 09:38:09,795 - tricys.core.modelica - INFO - Loading package: D:/Administrator/Documents/Github/tricys/test_example/example_model/package.mo
+2025-10-13 09:38:18,995 - tricys.simulation_analysis - INFO - Running sequential job 1/9 with parameters: {'blanket.TBR': 1.05}
+2025-10-13 09:38:19,356 - tricys.simulation_analysis - INFO - Sequential job 1 finished. Results at D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\TBR_Analysis\temp\job_1\job_1_simulation_results.csv
+2025-10-13 09:38:19,357 - tricys.simulation_analysis - INFO - Running sequential job 2/9 with parameters: {'blanket.TBR': 1.08}
+2025-10-13 09:38:19,478 - tricys.simulation_analysis - INFO - Sequential job 2 finished. Results at D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\TBR_Analysis\temp\job_2\job_2_simulation_results.csv
+2025-10-13 09:38:19,479 - tricys.simulation_analysis - INFO - Running sequential job 3/9 with parameters: {'blanket.TBR': 1.1}
+2025-10-13 09:38:19,603 - tricys.simulation_analysis - INFO - Sequential job 3 finished. Results at D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\TBR_Analysis\temp\job_3\job_3_simulation_results.csv
+2025-10-13 09:38:19,603 - tricys.simulation_analysis - INFO - Running sequential job 4/9 with parameters: {'blanket.TBR': 1.12}
+2025-10-13 09:38:19,719 - tricys.simulation_analysis - INFO - Sequential job 4 finished. Results at D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\TBR_Analysis\temp\job_4\job_4_simulation_results.csv
+2025-10-13 09:38:19,719 - tricys.simulation_analysis - INFO - Running sequential job 5/9 with parameters: {'blanket.TBR': 1.15}
+2025-10-13 09:38:19,840 - tricys.simulation_analysis - INFO - Sequential job 5 finished. Results at D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\TBR_Analysis\temp\job_5\job_5_simulation_results.csv
+2025-10-13 09:38:19,840 - tricys.simulation_analysis - INFO - Running sequential job 6/9 with parameters: {'blanket.TBR': 1.18}
+2025-10-13 09:38:19,955 - tricys.simulation_analysis - INFO - Sequential job 6 finished. Results at D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\TBR_Analysis\temp\job_6\job_6_simulation_results.csv
+2025-10-13 09:38:19,955 - tricys.simulation_analysis - INFO - Running sequential job 7/9 with parameters: {'blanket.TBR': 1.2}
+2025-10-13 09:38:20,068 - tricys.simulation_analysis - INFO - Sequential job 7 finished. Results at D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\TBR_Analysis\temp\job_7\job_7_simulation_results.csv
+2025-10-13 09:38:20,068 - tricys.simulation_analysis - INFO - Running sequential job 8/9 with parameters: {'blanket.TBR': 1.22}
+2025-10-13 09:38:20,175 - tricys.simulation_analysis - INFO - Sequential job 8 finished. Results at D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\TBR_Analysis\temp\job_8\job_8_simulation_results.csv
+2025-10-13 09:38:20,175 - tricys.simulation_analysis - INFO - Running sequential job 9/9 with parameters: {'blanket.TBR': 1.25}
+2025-10-13 09:38:20,282 - tricys.simulation_analysis - INFO - Sequential job 9 finished. Results at D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\TBR_Analysis\temp\job_9\job_9_simulation_results.csv
+2025-10-13 09:38:20,318 - tricys.simulation_analysis - INFO - Processing 9 job(s). Combining results.
+2025-10-13 09:38:20,417 - tricys.simulation_analysis - INFO - Combined results saved to: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\TBR_Analysis\results\sweep_results.csv
+2025-10-13 09:38:20,752 - tricys.simulation_analysis - INFO - Sweep time series plot generated: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\TBR_Analysis\results\sweep_sds_I1_vs_blanket_TBR.png
+2025-10-13 09:38:20,752 - tricys.simulation_analysis - INFO - Starting automated sensitivity analysis.
+2025-10-13 09:38:20,764 - tricys.simulation_analysis - INFO - Loading sweep results from: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\TBR_Analysis\results\sweep_results.csv
+2025-10-13 09:38:20,770 - tricys.simulation_analysis - INFO - Sensitivity analysis summary saved to: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\TBR_Analysis\results\sensitivity_analysis_summary.csv
+2025-10-13 09:38:20,790 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-13 09:38:20,793 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-13 09:38:20,846 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-13 09:38:20,849 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-13 09:38:20,891 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-13 09:38:20,894 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-13 09:38:21,338 - tricys.simulation_analysis - INFO - No post-processing task configured, skipping this step.
+2025-10-13 09:38:21,339 - tricys.simulation_analysis - INFO - ✓ Analysis case 3 executed successfully
+2025-10-13 09:38:21,339 - tricys.simulation_analysis - INFO - 
+=== Starting execution of analysis case 4/4 ===
+2025-10-13 09:38:21,339 - tricys.simulation_analysis - INFO - Case name: I_ISS_T_Analysis
+2025-10-13 09:38:21,339 - tricys.simulation_analysis - INFO - Independent variable: i_iss.T
+2025-10-13 09:38:21,339 - tricys.simulation_analysis - INFO - Working directory: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\I_ISS_T_Analysis
+2025-10-13 09:38:21,339 - tricys.core.jobs - INFO - Generating simulation jobs.{'i_iss.T': 'linspace:2:12:6'}
+2025-10-13 09:38:21,340 - tricys.simulation_analysis - INFO - Starting simulation in SEQUENTIAL mode.
+2025-10-13 09:38:21,340 - tricys.simulation_analysis - INFO - Running sweep sequentially. Intermediate files will be in: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\I_ISS_T_Analysis\temp
+2025-10-13 09:38:21,496 - tricys.core.modelica - INFO - Loading package: D:/Administrator/Documents/Github/tricys/test_example/example_model/package.mo
+2025-10-13 09:38:30,659 - tricys.simulation_analysis - INFO - Running sequential job 1/6 with parameters: {'i_iss.T': 2.0}
+2025-10-13 09:38:31,016 - tricys.simulation_analysis - INFO - Sequential job 1 finished. Results at D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\I_ISS_T_Analysis\temp\job_1\job_1_simulation_results.csv
+2025-10-13 09:38:31,017 - tricys.simulation_analysis - INFO - Starting bisection search for 'blanket.TBR' in range [0.5, 2.0]
+2025-10-13 09:38:31,166 - tricys.core.modelica - INFO - Loading package: D:/Administrator/Documents/Github/tricys/test_example/example_model/package.mo
+2025-10-13 09:38:40,332 - tricys.simulation_analysis - INFO - --- [job_1] Iteration 1/10: Testing blanket.TBR = 1.2500 ---
+2025-10-13 09:38:40,659 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 2.0, 'blanket.TBR': 1.25} successful. Metric 'Self_Sufficiency_Time': 86.0
+2025-10-13 09:38:40,660 - tricys.simulation_analysis - INFO - --- [job_1] Iteration 2/10: Testing blanket.TBR = 0.8750 ---
+2025-10-13 09:38:40,782 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 2.0, 'blanket.TBR': 0.875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:38:40,782 - tricys.simulation_analysis - INFO - --- [job_1] Iteration 3/10: Testing blanket.TBR = 1.0625 ---
+2025-10-13 09:38:40,907 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 2.0, 'blanket.TBR': 1.0625} successful. Metric 'Self_Sufficiency_Time': 130.0
+2025-10-13 09:38:40,907 - tricys.simulation_analysis - INFO - --- [job_1] Iteration 4/10: Testing blanket.TBR = 0.9688 ---
+2025-10-13 09:38:41,030 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 2.0, 'blanket.TBR': 0.96875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:38:41,030 - tricys.simulation_analysis - INFO - --- [job_1] Iteration 5/10: Testing blanket.TBR = 1.0156 ---
+2025-10-13 09:38:41,157 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 2.0, 'blanket.TBR': 1.015625} successful. Metric 'Self_Sufficiency_Time': 5655.0
+2025-10-13 09:38:41,158 - tricys.simulation_analysis - INFO - --- [job_1] Iteration 6/10: Testing blanket.TBR = 0.9922 ---
+2025-10-13 09:38:41,281 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 2.0, 'blanket.TBR': 0.9921875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:38:41,281 - tricys.simulation_analysis - INFO - --- [job_1] Iteration 7/10: Testing blanket.TBR = 1.0039 ---
+2025-10-13 09:38:41,391 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 2.0, 'blanket.TBR': 1.00390625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:38:41,391 - tricys.simulation_analysis - INFO - --- [job_1] Iteration 8/10: Testing blanket.TBR = 1.0098 ---
+2025-10-13 09:38:41,500 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 2.0, 'blanket.TBR': 1.009765625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:38:41,501 - tricys.simulation_analysis - INFO - --- [job_1] Iteration 9/10: Testing blanket.TBR = 1.0127 ---
+2025-10-13 09:38:41,612 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 2.0, 'blanket.TBR': 1.0126953125} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:38:41,612 - tricys.simulation_analysis - INFO - Search converged for job_1. Tolerance 0.005 reached.
+2025-10-13 09:38:41,612 - tricys.simulation_analysis - INFO - Bisection search for job_1 finished. Optimal value: 1.0156
+2025-10-13 09:38:41,670 - tricys.simulation_analysis - INFO - Running sequential job 2/6 with parameters: {'i_iss.T': 4.0}
+2025-10-13 09:38:41,816 - tricys.simulation_analysis - INFO - Sequential job 2 finished. Results at D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\I_ISS_T_Analysis\temp\job_2\job_2_simulation_results.csv
+2025-10-13 09:38:41,816 - tricys.simulation_analysis - INFO - Starting bisection search for 'blanket.TBR' in range [0.5, 2.0]
+2025-10-13 09:38:41,952 - tricys.core.modelica - INFO - Loading package: D:/Administrator/Documents/Github/tricys/test_example/example_model/package.mo
+2025-10-13 09:38:51,598 - tricys.simulation_analysis - INFO - --- [job_2] Iteration 1/10: Testing blanket.TBR = 1.2500 ---
+2025-10-13 09:38:51,948 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 4.0, 'blanket.TBR': 1.25} successful. Metric 'Self_Sufficiency_Time': 86.0
+2025-10-13 09:38:51,948 - tricys.simulation_analysis - INFO - --- [job_2] Iteration 2/10: Testing blanket.TBR = 0.8750 ---
+2025-10-13 09:38:52,073 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 4.0, 'blanket.TBR': 0.875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:38:52,074 - tricys.simulation_analysis - INFO - --- [job_2] Iteration 3/10: Testing blanket.TBR = 1.0625 ---
+2025-10-13 09:38:52,230 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 4.0, 'blanket.TBR': 1.0625} successful. Metric 'Self_Sufficiency_Time': 130.0
+2025-10-13 09:38:52,230 - tricys.simulation_analysis - INFO - --- [job_2] Iteration 4/10: Testing blanket.TBR = 0.9688 ---
+2025-10-13 09:38:52,367 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 4.0, 'blanket.TBR': 0.96875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:38:52,367 - tricys.simulation_analysis - INFO - --- [job_2] Iteration 5/10: Testing blanket.TBR = 1.0156 ---
+2025-10-13 09:38:52,512 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 4.0, 'blanket.TBR': 1.015625} successful. Metric 'Self_Sufficiency_Time': 5655.0
+2025-10-13 09:38:52,512 - tricys.simulation_analysis - INFO - --- [job_2] Iteration 6/10: Testing blanket.TBR = 0.9922 ---
+2025-10-13 09:38:52,640 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 4.0, 'blanket.TBR': 0.9921875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:38:52,640 - tricys.simulation_analysis - INFO - --- [job_2] Iteration 7/10: Testing blanket.TBR = 1.0039 ---
+2025-10-13 09:38:52,751 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 4.0, 'blanket.TBR': 1.00390625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:38:52,751 - tricys.simulation_analysis - INFO - --- [job_2] Iteration 8/10: Testing blanket.TBR = 1.0098 ---
+2025-10-13 09:38:52,872 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 4.0, 'blanket.TBR': 1.009765625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:38:52,873 - tricys.simulation_analysis - INFO - --- [job_2] Iteration 9/10: Testing blanket.TBR = 1.0127 ---
+2025-10-13 09:38:52,983 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 4.0, 'blanket.TBR': 1.0126953125} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:38:52,983 - tricys.simulation_analysis - INFO - Search converged for job_2. Tolerance 0.005 reached.
+2025-10-13 09:38:52,983 - tricys.simulation_analysis - INFO - Bisection search for job_2 finished. Optimal value: 1.0156
+2025-10-13 09:38:53,018 - tricys.simulation_analysis - INFO - Running sequential job 3/6 with parameters: {'i_iss.T': 6.0}
+2025-10-13 09:38:53,140 - tricys.simulation_analysis - INFO - Sequential job 3 finished. Results at D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\I_ISS_T_Analysis\temp\job_3\job_3_simulation_results.csv
+2025-10-13 09:38:53,140 - tricys.simulation_analysis - INFO - Starting bisection search for 'blanket.TBR' in range [0.5, 2.0]
+2025-10-13 09:38:53,302 - tricys.core.modelica - INFO - Loading package: D:/Administrator/Documents/Github/tricys/test_example/example_model/package.mo
+2025-10-13 09:39:02,708 - tricys.simulation_analysis - INFO - --- [job_3] Iteration 1/10: Testing blanket.TBR = 1.2500 ---
+2025-10-13 09:39:03,068 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 6.0, 'blanket.TBR': 1.25} successful. Metric 'Self_Sufficiency_Time': 86.0
+2025-10-13 09:39:03,069 - tricys.simulation_analysis - INFO - --- [job_3] Iteration 2/10: Testing blanket.TBR = 0.8750 ---
+2025-10-13 09:39:03,198 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 6.0, 'blanket.TBR': 0.875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:39:03,198 - tricys.simulation_analysis - INFO - --- [job_3] Iteration 3/10: Testing blanket.TBR = 1.0625 ---
+2025-10-13 09:39:03,326 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 6.0, 'blanket.TBR': 1.0625} successful. Metric 'Self_Sufficiency_Time': 130.0
+2025-10-13 09:39:03,326 - tricys.simulation_analysis - INFO - --- [job_3] Iteration 4/10: Testing blanket.TBR = 0.9688 ---
+2025-10-13 09:39:03,454 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 6.0, 'blanket.TBR': 0.96875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:39:03,454 - tricys.simulation_analysis - INFO - --- [job_3] Iteration 5/10: Testing blanket.TBR = 1.0156 ---
+2025-10-13 09:39:03,585 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 6.0, 'blanket.TBR': 1.015625} successful. Metric 'Self_Sufficiency_Time': 5655.0
+2025-10-13 09:39:03,586 - tricys.simulation_analysis - INFO - --- [job_3] Iteration 6/10: Testing blanket.TBR = 0.9922 ---
+2025-10-13 09:39:03,723 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 6.0, 'blanket.TBR': 0.9921875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:39:03,724 - tricys.simulation_analysis - INFO - --- [job_3] Iteration 7/10: Testing blanket.TBR = 1.0039 ---
+2025-10-13 09:39:03,843 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 6.0, 'blanket.TBR': 1.00390625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:39:03,843 - tricys.simulation_analysis - INFO - --- [job_3] Iteration 8/10: Testing blanket.TBR = 1.0098 ---
+2025-10-13 09:39:03,955 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 6.0, 'blanket.TBR': 1.009765625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:39:03,955 - tricys.simulation_analysis - INFO - --- [job_3] Iteration 9/10: Testing blanket.TBR = 1.0127 ---
+2025-10-13 09:39:04,075 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 6.0, 'blanket.TBR': 1.0126953125} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:39:04,075 - tricys.simulation_analysis - INFO - Search converged for job_3. Tolerance 0.005 reached.
+2025-10-13 09:39:04,075 - tricys.simulation_analysis - INFO - Bisection search for job_3 finished. Optimal value: 1.0156
+2025-10-13 09:39:04,109 - tricys.simulation_analysis - INFO - Running sequential job 4/6 with parameters: {'i_iss.T': 8.0}
+2025-10-13 09:39:04,248 - tricys.simulation_analysis - INFO - Sequential job 4 finished. Results at D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\I_ISS_T_Analysis\temp\job_4\job_4_simulation_results.csv
+2025-10-13 09:39:04,248 - tricys.simulation_analysis - INFO - Starting bisection search for 'blanket.TBR' in range [0.5, 2.0]
+2025-10-13 09:39:04,386 - tricys.core.modelica - INFO - Loading package: D:/Administrator/Documents/Github/tricys/test_example/example_model/package.mo
+2025-10-13 09:39:14,867 - tricys.simulation_analysis - INFO - --- [job_4] Iteration 1/10: Testing blanket.TBR = 1.2500 ---
+2025-10-13 09:39:15,241 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 8.0, 'blanket.TBR': 1.25} successful. Metric 'Self_Sufficiency_Time': 86.0
+2025-10-13 09:39:15,241 - tricys.simulation_analysis - INFO - --- [job_4] Iteration 2/10: Testing blanket.TBR = 0.8750 ---
+2025-10-13 09:39:15,369 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 8.0, 'blanket.TBR': 0.875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:39:15,369 - tricys.simulation_analysis - INFO - --- [job_4] Iteration 3/10: Testing blanket.TBR = 1.0625 ---
+2025-10-13 09:39:15,493 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 8.0, 'blanket.TBR': 1.0625} successful. Metric 'Self_Sufficiency_Time': 130.0
+2025-10-13 09:39:15,493 - tricys.simulation_analysis - INFO - --- [job_4] Iteration 4/10: Testing blanket.TBR = 0.9688 ---
+2025-10-13 09:39:15,740 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 8.0, 'blanket.TBR': 0.96875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:39:15,741 - tricys.simulation_analysis - INFO - --- [job_4] Iteration 5/10: Testing blanket.TBR = 1.0156 ---
+2025-10-13 09:39:15,871 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 8.0, 'blanket.TBR': 1.015625} successful. Metric 'Self_Sufficiency_Time': 5655.0
+2025-10-13 09:39:15,871 - tricys.simulation_analysis - INFO - --- [job_4] Iteration 6/10: Testing blanket.TBR = 0.9922 ---
+2025-10-13 09:39:16,004 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 8.0, 'blanket.TBR': 0.9921875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:39:16,004 - tricys.simulation_analysis - INFO - --- [job_4] Iteration 7/10: Testing blanket.TBR = 1.0039 ---
+2025-10-13 09:39:16,131 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 8.0, 'blanket.TBR': 1.00390625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:39:16,132 - tricys.simulation_analysis - INFO - --- [job_4] Iteration 8/10: Testing blanket.TBR = 1.0098 ---
+2025-10-13 09:39:16,260 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 8.0, 'blanket.TBR': 1.009765625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:39:16,260 - tricys.simulation_analysis - INFO - --- [job_4] Iteration 9/10: Testing blanket.TBR = 1.0127 ---
+2025-10-13 09:39:16,374 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 8.0, 'blanket.TBR': 1.0126953125} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:39:16,374 - tricys.simulation_analysis - INFO - Search converged for job_4. Tolerance 0.005 reached.
+2025-10-13 09:39:16,374 - tricys.simulation_analysis - INFO - Bisection search for job_4 finished. Optimal value: 1.0156
+2025-10-13 09:39:16,432 - tricys.simulation_analysis - INFO - Running sequential job 5/6 with parameters: {'i_iss.T': 10.0}
+2025-10-13 09:39:16,559 - tricys.simulation_analysis - INFO - Sequential job 5 finished. Results at D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\I_ISS_T_Analysis\temp\job_5\job_5_simulation_results.csv
+2025-10-13 09:39:16,559 - tricys.simulation_analysis - INFO - Starting bisection search for 'blanket.TBR' in range [0.5, 2.0]
+2025-10-13 09:39:16,710 - tricys.core.modelica - INFO - Loading package: D:/Administrator/Documents/Github/tricys/test_example/example_model/package.mo
+2025-10-13 09:39:27,432 - tricys.simulation_analysis - INFO - --- [job_5] Iteration 1/10: Testing blanket.TBR = 1.2500 ---
+2025-10-13 09:39:27,768 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 10.0, 'blanket.TBR': 1.25} successful. Metric 'Self_Sufficiency_Time': 86.0
+2025-10-13 09:39:27,768 - tricys.simulation_analysis - INFO - --- [job_5] Iteration 2/10: Testing blanket.TBR = 0.8750 ---
+2025-10-13 09:39:27,902 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 10.0, 'blanket.TBR': 0.875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:39:27,903 - tricys.simulation_analysis - INFO - --- [job_5] Iteration 3/10: Testing blanket.TBR = 1.0625 ---
+2025-10-13 09:39:28,065 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 10.0, 'blanket.TBR': 1.0625} successful. Metric 'Self_Sufficiency_Time': 130.0
+2025-10-13 09:39:28,065 - tricys.simulation_analysis - INFO - --- [job_5] Iteration 4/10: Testing blanket.TBR = 0.9688 ---
+2025-10-13 09:39:28,225 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 10.0, 'blanket.TBR': 0.96875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:39:28,226 - tricys.simulation_analysis - INFO - --- [job_5] Iteration 5/10: Testing blanket.TBR = 1.0156 ---
+2025-10-13 09:39:28,404 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 10.0, 'blanket.TBR': 1.015625} successful. Metric 'Self_Sufficiency_Time': 5655.0
+2025-10-13 09:39:28,405 - tricys.simulation_analysis - INFO - --- [job_5] Iteration 6/10: Testing blanket.TBR = 0.9922 ---
+2025-10-13 09:39:28,564 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 10.0, 'blanket.TBR': 0.9921875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:39:28,564 - tricys.simulation_analysis - INFO - --- [job_5] Iteration 7/10: Testing blanket.TBR = 1.0039 ---
+2025-10-13 09:39:28,701 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 10.0, 'blanket.TBR': 1.00390625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:39:28,702 - tricys.simulation_analysis - INFO - --- [job_5] Iteration 8/10: Testing blanket.TBR = 1.0098 ---
+2025-10-13 09:39:28,826 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 10.0, 'blanket.TBR': 1.009765625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:39:28,826 - tricys.simulation_analysis - INFO - --- [job_5] Iteration 9/10: Testing blanket.TBR = 1.0127 ---
+2025-10-13 09:39:28,966 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 10.0, 'blanket.TBR': 1.0126953125} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:39:28,966 - tricys.simulation_analysis - INFO - Search converged for job_5. Tolerance 0.005 reached.
+2025-10-13 09:39:28,966 - tricys.simulation_analysis - INFO - Bisection search for job_5 finished. Optimal value: 1.0156
+2025-10-13 09:39:29,011 - tricys.simulation_analysis - INFO - Running sequential job 6/6 with parameters: {'i_iss.T': 12.0}
+2025-10-13 09:39:29,166 - tricys.simulation_analysis - INFO - Sequential job 6 finished. Results at D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\I_ISS_T_Analysis\temp\job_6\job_6_simulation_results.csv
+2025-10-13 09:39:29,166 - tricys.simulation_analysis - INFO - Starting bisection search for 'blanket.TBR' in range [0.5, 2.0]
+2025-10-13 09:39:29,304 - tricys.core.modelica - INFO - Loading package: D:/Administrator/Documents/Github/tricys/test_example/example_model/package.mo
+2025-10-13 09:39:40,412 - tricys.simulation_analysis - INFO - --- [job_6] Iteration 1/10: Testing blanket.TBR = 1.2500 ---
+2025-10-13 09:39:40,854 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 12.0, 'blanket.TBR': 1.25} successful. Metric 'Self_Sufficiency_Time': 87.0
+2025-10-13 09:39:40,855 - tricys.simulation_analysis - INFO - --- [job_6] Iteration 2/10: Testing blanket.TBR = 0.8750 ---
+2025-10-13 09:39:41,029 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 12.0, 'blanket.TBR': 0.875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:39:41,030 - tricys.simulation_analysis - INFO - --- [job_6] Iteration 3/10: Testing blanket.TBR = 1.0625 ---
+2025-10-13 09:39:41,185 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 12.0, 'blanket.TBR': 1.0625} successful. Metric 'Self_Sufficiency_Time': 131.0
+2025-10-13 09:39:41,186 - tricys.simulation_analysis - INFO - --- [job_6] Iteration 4/10: Testing blanket.TBR = 0.9688 ---
+2025-10-13 09:39:41,343 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 12.0, 'blanket.TBR': 0.96875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:39:41,343 - tricys.simulation_analysis - INFO - --- [job_6] Iteration 5/10: Testing blanket.TBR = 1.0156 ---
+2025-10-13 09:39:41,517 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 12.0, 'blanket.TBR': 1.015625} successful. Metric 'Self_Sufficiency_Time': 5655.0
+2025-10-13 09:39:41,517 - tricys.simulation_analysis - INFO - --- [job_6] Iteration 6/10: Testing blanket.TBR = 0.9922 ---
+2025-10-13 09:39:41,707 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 12.0, 'blanket.TBR': 0.9921875} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:39:41,708 - tricys.simulation_analysis - INFO - --- [job_6] Iteration 7/10: Testing blanket.TBR = 1.0039 ---
+2025-10-13 09:39:41,877 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 12.0, 'blanket.TBR': 1.00390625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:39:41,877 - tricys.simulation_analysis - INFO - --- [job_6] Iteration 8/10: Testing blanket.TBR = 1.0098 ---
+2025-10-13 09:39:42,043 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 12.0, 'blanket.TBR': 1.009765625} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:39:42,043 - tricys.simulation_analysis - INFO - --- [job_6] Iteration 9/10: Testing blanket.TBR = 1.0127 ---
+2025-10-13 09:39:42,199 - tricys.simulation_analysis - INFO - Analysis for params {'i_iss.T': 12.0, 'blanket.TBR': 1.0126953125} successful. Metric 'Self_Sufficiency_Time': 10000.0
+2025-10-13 09:39:42,199 - tricys.simulation_analysis - INFO - Search converged for job_6. Tolerance 0.005 reached.
+2025-10-13 09:39:42,200 - tricys.simulation_analysis - INFO - Bisection search for job_6 finished. Optimal value: 1.0156
+2025-10-13 09:39:42,255 - tricys.simulation_analysis - INFO - Sweep optimization summary saved to: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\I_ISS_T_Analysis\results\requierd_tbr_summary.csv
+2025-10-13 09:39:42,307 - tricys.simulation_analysis - INFO - Processing 6 job(s). Combining results.
+2025-10-13 09:39:42,408 - tricys.simulation_analysis - INFO - Combined results saved to: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\I_ISS_T_Analysis\results\sweep_results.csv
+2025-10-13 09:39:42,774 - tricys.simulation_analysis - INFO - Sweep time series plot generated: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\I_ISS_T_Analysis\results\sweep_sds_I1_vs_i_iss_T.png
+2025-10-13 09:39:42,774 - tricys.simulation_analysis - INFO - Starting automated sensitivity analysis.
+2025-10-13 09:39:42,786 - tricys.simulation_analysis - INFO - Loading sweep results from: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\I_ISS_T_Analysis\results\sweep_results.csv
+2025-10-13 09:39:42,793 - tricys.simulation_analysis - INFO - Merged optimization and sensitivity analysis summaries.
+2025-10-13 09:39:42,794 - tricys.simulation_analysis - INFO - Sensitivity analysis summary saved to: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\I_ISS_T_Analysis\results\sensitivity_analysis_summary.csv
+2025-10-13 09:39:42,828 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-13 09:39:42,831 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-13 09:39:42,872 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-13 09:39:42,875 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-13 09:39:42,910 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-13 09:39:42,913 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-13 09:39:42,956 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-13 09:39:42,959 - matplotlib.category - INFO - Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+2025-10-13 09:39:43,783 - tricys.simulation_analysis - INFO - No post-processing task configured, skipping this step.
+2025-10-13 09:39:43,784 - tricys.simulation_analysis - INFO - ✓ Analysis case 4 executed successfully
+2025-10-13 09:39:43,784 - tricys.simulation_analysis - INFO - 
+=== Analysis Cases Execution Completed ===
+2025-10-13 09:39:43,784 - tricys.simulation_analysis - INFO - Successfully executed: 4/4 cases
+2025-10-13 09:39:43,786 - tricys.analysis.report - INFO - Summary report generated:
+2025-10-13 09:39:43,786 - tricys.analysis.report - INFO -   - Detailed report: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\execution_report_20251013_093500.md
+2025-10-13 09:39:43,791 - tricys.analysis.report - INFO - Detailed analysis report generated for FB_Analysis: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\FB_Analysis\results\analysis_report_FB_Analysis.md
+2025-10-13 09:39:43,792 - tricys.analysis.report - INFO - Proceeding with LLM analysis for case FB_Analysis.
+2025-10-13 09:39:44,533 - tricys.analysis.report - INFO - Sending request to OpenAI API for case FB_Analysis (Attempt 1/3)...
+2025-10-13 09:40:32,253 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-13 09:40:32,258 - tricys.analysis.report - INFO - LLM analysis successful for case FB_Analysis.
+2025-10-13 09:40:32,259 - tricys.analysis.report - INFO - Appended LLM analysis to D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\FB_Analysis\results\analysis_report_FB_Analysis.md
+2025-10-13 09:40:32,261 - tricys.analysis.report - INFO - Detailed analysis report generated for DIR_Analysis: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\DIR_Analysis\results\analysis_report_DIR_Analysis.md
+2025-10-13 09:40:32,262 - tricys.analysis.report - INFO - Proceeding with LLM analysis for case DIR_Analysis.
+2025-10-13 09:40:32,885 - tricys.analysis.report - INFO - Sending request to OpenAI API for case DIR_Analysis (Attempt 1/3)...
+2025-10-13 09:41:26,137 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-13 09:41:26,138 - tricys.analysis.report - INFO - LLM analysis successful for case DIR_Analysis.
+2025-10-13 09:41:26,139 - tricys.analysis.report - INFO - Appended LLM analysis to D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\DIR_Analysis\results\analysis_report_DIR_Analysis.md
+2025-10-13 09:41:26,140 - tricys.analysis.report - INFO - Detailed analysis report generated for TBR_Analysis: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\TBR_Analysis\results\analysis_report_TBR_Analysis.md
+2025-10-13 09:41:26,141 - tricys.analysis.report - INFO - Proceeding with LLM analysis for case TBR_Analysis.
+2025-10-13 09:41:26,732 - tricys.analysis.report - INFO - Sending request to OpenAI API for case TBR_Analysis (Attempt 1/3)...
+2025-10-13 09:42:18,724 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-13 09:42:18,725 - tricys.analysis.report - INFO - LLM analysis successful for case TBR_Analysis.
+2025-10-13 09:42:18,726 - tricys.analysis.report - INFO - Appended LLM analysis to D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\TBR_Analysis\results\analysis_report_TBR_Analysis.md
+2025-10-13 09:42:18,728 - tricys.analysis.report - INFO - Detailed analysis report generated for I_ISS_T_Analysis: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\I_ISS_T_Analysis\results\analysis_report_I_ISS_T_Analysis.md
+2025-10-13 09:42:18,728 - tricys.analysis.report - INFO - Proceeding with LLM analysis for case I_ISS_T_Analysis.
+2025-10-13 09:42:19,336 - tricys.analysis.report - INFO - Sending request to OpenAI API for case I_ISS_T_Analysis (Attempt 1/3)...
+2025-10-13 09:42:58,005 - httpx - INFO - HTTP Request: POST https://dashscope.aliyuncs.com/compatible-mode/v1/chat/completions "HTTP/1.1 200 OK"
+2025-10-13 09:42:58,006 - tricys.analysis.report - INFO - LLM analysis successful for case I_ISS_T_Analysis.
+2025-10-13 09:42:58,007 - tricys.analysis.report - INFO - Appended LLM analysis to D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\I_ISS_T_Analysis\results\analysis_report_I_ISS_T_Analysis.md
+2025-10-13 09:42:58,007 - tricys.analysis.report - INFO - Consolidating analysis reports...
+2025-10-13 09:42:58,007 - tricys.analysis.report - INFO - Consolidating reports into: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\FB_Analysis\report
+2025-10-13 09:42:58,008 - tricys.analysis.report - INFO - Copied analysis_report_FB_Analysis.md to D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\FB_Analysis\report
+2025-10-13 09:42:58,009 - tricys.analysis.report - INFO - Copied combined_analysis_plots.png to D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\FB_Analysis\report
+2025-10-13 09:42:58,012 - tricys.analysis.report - INFO - Copied sweep_sds_I1_vs_plasma1_fb.png to D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\FB_Analysis\report
+2025-10-13 09:42:58,012 - tricys.analysis.report - INFO - Consolidating reports into: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\DIR_Analysis\report
+2025-10-13 09:42:58,013 - tricys.analysis.report - INFO - Copied analysis_report_DIR_Analysis.md to D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\DIR_Analysis\report
+2025-10-13 09:42:58,014 - tricys.analysis.report - INFO - Copied combined_analysis_plots.png to D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\DIR_Analysis\report
+2025-10-13 09:42:58,016 - tricys.analysis.report - INFO - Copied sweep_sds_I1_vs_tep_fep_to_SDS_Fraction1.png to D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\DIR_Analysis\report
+2025-10-13 09:42:58,016 - tricys.analysis.report - INFO - Consolidating reports into: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\TBR_Analysis\report
+2025-10-13 09:42:58,017 - tricys.analysis.report - INFO - Copied analysis_report_TBR_Analysis.md to D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\TBR_Analysis\report
+2025-10-13 09:42:58,017 - tricys.analysis.report - INFO - Copied combined_analysis_plots.png to D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\TBR_Analysis\report
+2025-10-13 09:42:58,019 - tricys.analysis.report - INFO - Copied sweep_sds_I1_vs_blanket_TBR.png to D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\TBR_Analysis\report
+2025-10-13 09:42:58,019 - tricys.analysis.report - INFO - Consolidating reports into: D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\I_ISS_T_Analysis\report
+2025-10-13 09:42:58,020 - tricys.analysis.report - INFO - Copied analysis_report_I_ISS_T_Analysis.md to D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\I_ISS_T_Analysis\report
+2025-10-13 09:42:58,020 - tricys.analysis.report - INFO - Copied combined_analysis_plots.png to D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\I_ISS_T_Analysis\report
+2025-10-13 09:42:58,021 - tricys.analysis.report - INFO - Copied sweep_sds_I1_vs_i_iss_T.png to D:\Administrator\Documents\Github\tricys\test_example\analysis\ai_analysis\analysis_cases\20251013_093500\I_ISS_T_Analysis\report
+2025-10-13 09:42:58,022 - tricys.simulation_analysis - INFO - Main execution completed successfully.
